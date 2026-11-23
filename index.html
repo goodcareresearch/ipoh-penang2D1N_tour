@@ -2,1399 +2,858 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>2D1N Perak & Penang Self-Drive Road Trip (26 – 27 Nov 2026)</title>
-  <!-- Google Fonts: Plus Jakarta Sans, Noto Sans SC & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <!-- Tailwind CSS CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Perak & Penang 2D1N Self-Drive Roadbook (26–27 Nov 2026)</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            sandstone: '#FAF8F5',
-            heritage: {
-              DEFAULT: '#134E4A',
-              light: '#0F766E',
-              soft: '#CCFBF1',
-              pale: '#F0FDFA'
-            },
-            terracotta: {
-              DEFAULT: '#C2410C',
-              light: '#EA580C',
-              soft: '#FFEDD5',
-              pale: '#FFF7ED'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', '"Noto Sans SC"', 'system-ui', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace']
-          },
-          boxShadow: {
-            card: '0 2px 12px -2px rgba(28, 25, 23, 0.06), 0 1px 3px -1px rgba(28, 25, 23, 0.04)',
-            sticky: '0 4px 20px -4px rgba(19, 78, 74, 0.12)'
-          }
-        }
-      }
-    };
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    /* Base Nanyang Editorial Styling & Smooth Touch Interactions */
-    html {
-      scroll-behavior: smooth;
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #F7F5F0;
+      color: #1E293B;
       -webkit-tap-highlight-color: transparent;
     }
-    body {
-      background-color: #FAF8F5;
-      color: #1C1917;
-      font-family: 'Plus Jakarta Sans', 'Noto Sans SC', system-ui, sans-serif;
-      overflow-x: hidden;
-    }
-    /* Custom Toggle Switch */
-    .toggle-checkbox:checked {
-      right: 0;
-      border-color: #134E4A;
-    }
-    .toggle-checkbox:checked + .toggle-label {
-      background-color: #134E4A;
-    }
-    /* Hide scrollbar on horizontal quick-jump pills while preserving scroll */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    /* Subtle visited card dimming */
-    .stop-visited {
-      background-color: #F5F5F4 !important;
-      border-color: #D6D3D1 !important;
-    }
-    .stop-visited .stop-title {
-      text-decoration: line-through;
-      color: #78716C;
-    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .card-shadow { box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06); }
   </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-heritage-soft selection:text-heritage">
+<body class="pb-24">
 
-  <!-- Sticky Mobile-First Top Navigation & KPI Header -->
-  <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-stone-200/90 shadow-sticky">
-    <div class="max-w-3xl mx-auto px-3.5 sm:px-6 pt-3 pb-2.5">
-      <!-- Top Title Row -->
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-40 bg-[#14362D] text-white shadow-md">
+    <div class="max-w-2xl mx-auto px-4 pt-3.5 pb-3">
       <div class="flex items-start justify-between gap-2">
-        <div class="min-w-0">
-          <div class="flex flex-wrap items-center gap-1.5 mb-1">
-            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase bg-heritage text-white">
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              26 – 27 Nov 2026
-            </span>
-            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-terracotta-soft text-terracotta border border-terracotta/20">
-              2D1N Self-Drive
-            </span>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-400/30">2D1N Self-Drive</span>
+            <span class="text-xs text-emerald-200/90">26–27 Nov 2026</span>
           </div>
-          <h1 class="text-base sm:text-xl font-extrabold text-stone-900 tracking-tight leading-snug truncate">
-            Perak &amp; Penang Road Trip
-          </h1>
-          <p class="text-[11px] sm:text-xs text-stone-500 font-medium truncate">
-            Putra Heights ⇄ Bidor • Gopeng • Ipoh • Penang Island &amp; Perai
-          </p>
+          <h1 class="text-lg font-extrabold tracking-tight mt-1 leading-snug">Perak & Penang Cultural Roadbook</h1>
+          <p class="text-xs text-emerald-100/80">Putra Heights Loop • 2 Pax • ~655 km</p>
         </div>
-
-        <!-- Quick Share & Reset Actions -->
-        <div class="flex items-center gap-1.5 shrink-0 pt-0.5">
-          <button
-            id="shareBtn"
-            type="button"
-            onclick="copyShareLink()"
-            class="inline-flex items-center gap-1.5 px-2.5 py-2 rounded-xl text-xs font-bold bg-white text-heritage border border-stone-200 hover:bg-heritage-pale active:scale-95 transition shadow-xs"
-            title="Copy page link to share"
-          >
-            <svg class="w-3.5 h-3.5 text-heritage" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-            <span>Share</span>
-          </button>
-        </div>
+        <button onclick="shareTrip()" class="shrink-0 flex items-center gap-1.5 bg-white/15 hover:bg-white/25 active:scale-95 transition text-xs font-semibold px-3 py-2 rounded-xl border border-white/15">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Share
+        </button>
       </div>
 
-      <!-- Compact 4-Metric KPI Strip -->
-      <div class="grid grid-cols-4 gap-1.5 sm:gap-2.5 mt-2.5">
-        <div class="bg-white rounded-xl px-2 py-1.5 border border-stone-200/80 text-center">
-          <div class="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Distance</div>
-          <div class="text-xs sm:text-sm font-extrabold font-mono text-stone-800 mt-0.5">~655 km</div>
+      <!-- Progress Bar -->
+      <div class="mt-3">
+        <div class="flex justify-between text-[11px] text-emerald-200 mb-1">
+          <span id="progress-label">0 of 18 stops checked</span>
+          <span id="progress-pct">0%</span>
         </div>
-        <div class="bg-white rounded-xl px-2 py-1.5 border border-stone-200/80 text-center">
-          <div class="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Est. Toll</div>
-          <div class="text-xs sm:text-sm font-extrabold font-mono text-terracotta mt-0.5">~RM 88.14</div>
-        </div>
-        <div class="bg-white rounded-xl px-2 py-1.5 border border-stone-200/80 text-center">
-          <div class="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Entry (MyKad)</div>
-          <div class="text-xs sm:text-sm font-extrabold font-mono text-heritage mt-0.5">RM 26/pax</div>
-        </div>
-        <div class="bg-white rounded-xl px-2 py-1.5 border border-stone-200/80 text-center">
-          <div class="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Progress</div>
-          <div id="kpiProgressText" class="text-xs sm:text-sm font-extrabold font-mono text-emerald-700 mt-0.5">0 / 18</div>
-          <div class="w-full h-1 bg-stone-100 rounded-full overflow-hidden mt-1">
-            <div id="kpiProgressBar" class="h-full bg-emerald-600 rounded-full transition-all duration-300" style="width: 0%"></div>
-          </div>
+        <div class="w-full h-1.5 bg-black/30 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-amber-400 transition-all duration-300 rounded-full" style="width: 0%"></div>
         </div>
       </div>
+    </div>
 
-      <!-- Day Switcher Tabs -->
-      <nav class="grid grid-cols-3 gap-1.5 bg-stone-200/75 p-1 rounded-xl mt-2.5" role="tablist" aria-label="Itinerary Sections">
-        <button
-          id="tab-day1"
-          type="button"
-          onclick="switchTab('day1')"
-          class="tab-btn py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 bg-heritage text-white shadow-xs"
-        >
-          <span>Day 1</span>
-          <span class="hidden sm:inline">• Thu 26 Nov</span>
-          <span class="sm:hidden text-[11px] opacity-90">Thu</span>
+    <!-- Navigation Tabs -->
+    <div class="bg-[#0F2922] border-t border-white/10">
+      <div class="max-w-2xl mx-auto px-3 flex gap-1.5 py-2 overflow-x-auto no-scrollbar">
+        <button onclick="switchTab('day1')" id="tab-day1" class="tab-btn flex-1 py-2 px-3 rounded-lg text-xs font-bold transition bg-amber-400 text-slate-900 shadow-sm whitespace-nowrap">
+          Day 1 • Thu 26/11
         </button>
-        <button
-          id="tab-day2"
-          type="button"
-          onclick="switchTab('day2')"
-          class="tab-btn py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 text-stone-600 hover:text-stone-900"
-        >
-          <span>Day 2</span>
-          <span class="hidden sm:inline">• Fri 27 Nov</span>
-          <span class="sm:hidden text-[11px] opacity-90">Fri</span>
+        <button onclick="switchTab('day2')" id="tab-day2" class="tab-btn flex-1 py-2 px-3 rounded-lg text-xs font-bold transition text-emerald-100/80 hover:bg-white/10 whitespace-nowrap">
+          Day 2 • Fri 27/11
         </button>
-        <button
-          id="tab-summary"
-          type="button"
-          onclick="switchTab('summary')"
-          class="tab-btn py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 text-stone-600 hover:text-stone-900"
-        >
-          <span>Summary &amp; Apps</span>
+        <button onclick="switchTab('summary')" id="tab-summary" class="tab-btn flex-1 py-2 px-3 rounded-lg text-xs font-bold transition text-emerald-100/80 hover:bg-white/10 whitespace-nowrap">
+          Contacts, Budget & Apps
         </button>
-      </nav>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content Container -->
-  <main class="flex-1 max-w-3xl w-full mx-auto px-3.5 sm:px-6 pt-4 pb-16">
+  <!-- Main Content -->
+  <main class="max-w-2xl mx-auto px-4 pt-4">
+    <!-- Day 1 Section -->
+    <section id="view-day1" class="space-y-4"></section>
 
-    <!-- ==================== DAY 1 VIEW ==================== -->
-    <section id="view-day1" class="space-y-4">
-      <!-- Day 1 Header Banner -->
-      <div class="bg-white rounded-2xl p-4 border border-stone-200/90 shadow-card flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div>
-          <div class="text-xs font-bold uppercase tracking-wider text-terracotta">Thursday • 26 November 2026</div>
-          <h2 class="text-base sm:text-lg font-extrabold text-stone-900 mt-0.5">
-            Putra Heights ➔ Bidor ➔ Ipoh ➔ Penang Island
-          </h2>
-          <p class="text-xs text-stone-500 mt-0.5">
-            10 stops • Northbound PLUS E1 &amp; First Penang Bridge • Sunset &amp; Night Heritage Walk
-          </p>
-        </div>
-        <div class="flex items-center gap-2 self-start sm:self-center">
-          <span class="px-2.5 py-1 rounded-lg bg-heritage-pale text-heritage text-xs font-bold border border-heritage/15">
-            Start 06:45 AM
-          </span>
-        </div>
-      </div>
-
-      <!-- Day 1 Stop Cards Container -->
-      <div id="day1-stops" class="space-y-4"></div>
-    </section>
-
-    <!-- ==================== DAY 2 VIEW ==================== -->
+    <!-- Day 2 Section -->
     <section id="view-day2" class="hidden space-y-4">
-      <!-- Day 2 Header Banner -->
-      <div class="bg-white rounded-2xl p-4 border border-stone-200/90 shadow-card flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div>
-          <div class="text-xs font-bold uppercase tracking-wider text-terracotta">Friday • 27 November 2026</div>
-          <h2 class="text-base sm:text-lg font-extrabold text-stone-900 mt-0.5">
-            Ayer Itam ➔ Perai ➔ Ipoh ➔ Batu Gajah ➔ Home
-          </h2>
-          <p id="day2-subtitle" class="text-xs text-stone-500 mt-0.5">
-            8 stops • Morning Market, Heritage &amp; Castle Exploration • Home by 09:00 PM
-          </p>
+      <!-- Interactive Optional Route Controls -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-amber-200/80">
+        <div class="flex items-center gap-2 mb-2.5">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <h2 class="text-xs font-extrabold uppercase tracking-wider text-slate-700">Day 2 Optional Stops (Live Schedule Sync)</h2>
         </div>
-        <div class="flex items-center gap-2 self-start sm:self-center">
-          <span id="day2-eta-badge" class="px-2.5 py-1 rounded-lg bg-heritage-pale text-heritage text-xs font-bold border border-heritage/15">
-            Home 09:00 PM
-          </span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 cursor-pointer">
+            <div class="pr-2">
+              <div class="text-xs font-bold text-slate-800">P. Ramlee House (Free)</div>
+              <div class="text-[11px] text-slate-500">09:30 AM – 10:20 AM (On-route)</div>
+            </div>
+            <input type="checkbox" id="toggle-pramlee" checked onchange="renderAll()" class="w-4 h-4 accent-[#14362D] rounded cursor-pointer" />
+          </label>
+          <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 cursor-pointer">
+            <div class="pr-2">
+              <div class="text-xs font-bold text-slate-800">Wellness Factory Massage</div>
+              <div class="text-[11px] text-slate-500">04:40 PM – 05:40 PM (Ipoh)</div>
+            </div>
+            <input type="checkbox" id="toggle-wellness" checked onchange="renderAll()" class="w-4 h-4 accent-[#14362D] rounded cursor-pointer" />
+          </label>
         </div>
       </div>
-
-      <!-- Interactive Optional Toggles Card -->
-      <div class="bg-gradient-to-br from-heritage-pale to-white rounded-2xl p-4 border border-heritage/25 shadow-card space-y-3">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <span class="w-6 h-6 rounded-lg bg-heritage text-white flex items-center justify-center text-xs font-bold">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
-            </span>
-            <div>
-              <h3 class="text-sm font-extrabold text-heritage">Day 2 Optional Route Customizer</h3>
-              <p class="text-[11px] text-stone-500">Toggle stops ON/OFF to dynamically recalculate timings</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="divide-y divide-stone-200/80 bg-white/90 rounded-xl border border-stone-200/80 px-3.5">
-          <!-- Toggle 1: P. Ramlee House -->
-          <div class="py-3 flex items-center justify-between gap-3">
-            <div class="min-w-0">
-              <label for="toggle-pramlee" class="text-xs sm:text-sm font-bold text-stone-800 cursor-pointer block">
-                Include Optional: P. Ramlee House (09:30 AM)
-              </label>
-              <p id="toggle-pramlee-desc" class="text-[11px] text-stone-500 mt-0.5">
-                ON: Visit 09:30–10:20 AM (Free entry, zero detour on route to bridge).
-              </p>
-            </div>
-            <button
-              id="btn-toggle-pramlee"
-              type="button"
-              role="switch"
-              aria-checked="true"
-              onclick="toggleOptional('pramlee')"
-              class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-heritage transition-colors duration-200 ease-in-out focus:outline-none"
-            >
-              <span id="knob-toggle-pramlee" class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-sm ring-0 transition duration-200 ease-in-out translate-x-5"></span>
-            </button>
-          </div>
-
-          <!-- Toggle 2: Wellness Factory Massage -->
-          <div class="py-3 flex items-center justify-between gap-3">
-            <div class="min-w-0">
-              <label for="toggle-wellness" class="text-xs sm:text-sm font-bold text-stone-800 cursor-pointer block">
-                Include Optional: Wellness Factory Massage (04:40 PM)
-              </label>
-              <p id="toggle-wellness-desc" class="text-[11px] text-stone-500 mt-0.5">
-                ON: 60-min massage 04:40–05:40 PM • Dinner 05:45 PM • Home 09:00 PM.
-              </p>
-            </div>
-            <button
-              id="btn-toggle-wellness"
-              type="button"
-              role="switch"
-              aria-checked="true"
-              onclick="toggleOptional('wellness')"
-              class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-heritage transition-colors duration-200 ease-in-out focus:outline-none"
-            >
-              <span id="knob-toggle-wellness" class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-sm ring-0 transition duration-200 ease-in-out translate-x-5"></span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Dynamic Alert Callout when P. Ramlee is OFF -->
-        <div id="pramlee-off-banner" class="hidden rounded-xl bg-amber-50 border border-amber-200 px-3 py-2.5 text-xs text-amber-900 flex items-start gap-2">
-          <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <div>
-            <span class="font-bold">Relaxed Morning Mode Active:</span> Since P. Ramlee House is skipped, Kingston Hotel 13 check-out can be delayed to <span class="font-mono font-bold underline">09:45 AM</span> before heading directly across Penang Bridge to Perai!
-          </div>
-        </div>
-      </div>
-
-      <!-- Day 2 Stop Cards Container -->
-      <div id="day2-stops" class="space-y-4"></div>
+      <div id="day2-cards" class="space-y-4"></div>
     </section>
 
-    <!-- ==================== SUMMARY & APPS VIEW ==================== -->
+    <!-- Summary, Contacts & Apps Section -->
     <section id="view-summary" class="hidden space-y-4">
+      <!-- Quick Pre-Order & Booking Directory -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-slate-200/70">
+        <h2 class="text-sm font-extrabold text-slate-900 mb-1">1-Click Business Contact & Pre-Order Hub</h2>
+        <p class="text-xs text-slate-500 mb-3">Tap <b>Google Lookup</b> to copy a shop's number from Google Business Profile, then save it once to enable <b>1-Click WhatsApp</b> across the trip.</p>
+        <div id="contact-directory" class="space-y-2.5"></div>
+      </div>
 
-      <!-- 1. Complete Toll Exit Plazas Breakdown -->
-      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-stone-200/90 shadow-card">
-        <div class="flex items-center justify-between gap-2 mb-3">
-          <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">PLUS E1 &amp; ELITE Highway</span>
-            <h2 class="text-base sm:text-lg font-extrabold text-stone-900">Complete Toll Exit Plazas Breakdown</h2>
+      <!-- Budget Overview -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-slate-200/70">
+        <h2 class="text-sm font-extrabold text-slate-900 mb-3">Fixed Trip Cost Estimate (2 Pax)</h2>
+        <div class="grid grid-cols-2 gap-2.5 text-xs">
+          <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200/60">
+            <div class="text-slate-500">Entrance Fees (MyKad)</div>
+            <div class="text-base font-extrabold text-[#14362D] mt-0.5">RM 26.00 <span class="text-[11px] font-medium">/ pax</span></div>
+            <div class="text-[11px] text-slate-600 mt-1">Mirror Lake RM5 + Penang Hill RM16 + Kellie's Castle RM5</div>
           </div>
-          <span class="px-2.5 py-1 rounded-xl bg-terracotta-soft text-terracotta font-mono text-xs sm:text-sm font-extrabold">
-            Total ~RM 88.14
-          </span>
-        </div>
-
-        <div class="space-y-2.5 text-xs sm:text-sm">
-          <!-- Day 1 Tolls -->
-          <div class="p-3 rounded-xl bg-stone-50 border border-stone-200/80">
-            <div class="font-bold text-heritage mb-2 flex items-center justify-between">
-              <span>Day 1 (Thu 26 Nov) — Northbound</span>
-              <span class="font-mono">~RM 47.24</span>
-            </div>
-            <ul class="space-y-1.5 text-stone-700">
-              <li class="flex justify-between items-start gap-2">
-                <span>1. Putra Heights Toll ➔ <strong>Exit 130 (Bidor)</strong> <span class="text-stone-400 text-[11px]">(~132 km)</span></span>
-                <span class="font-mono font-bold shrink-0">~RM 17.60</span>
-              </li>
-              <li class="flex justify-between items-start gap-2">
-                <span>2. Bidor Toll ➔ <strong>Exit 135 (Gopeng)</strong> <span class="text-stone-400 text-[11px]">(~48 km)</span></span>
-                <span class="font-mono font-bold shrink-0">~RM 5.80</span>
-              </li>
-              <li class="flex justify-between items-start gap-2">
-                <span>3. Ipoh Utara Toll ➔ Juru Toll <span class="text-stone-400 text-[11px]">(RM 18.10)</span> + <strong>Exit 165 Penang Bridge</strong> <span class="text-stone-400 text-[11px]">(RM 5.74)</span></span>
-                <span class="font-mono font-bold shrink-0">~RM 23.84</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Day 2 Tolls -->
-          <div class="p-3 rounded-xl bg-stone-50 border border-stone-200/80">
-            <div class="font-bold text-heritage mb-2 flex items-center justify-between">
-              <span>Day 2 (Fri 27 Nov) — Southbound</span>
-              <span class="font-mono">~RM 40.90</span>
-            </div>
-            <ul class="space-y-1.5 text-stone-700">
-              <li class="flex justify-between items-start gap-2">
-                <span>1. First Penang Bridge (Island ➔ Mainland Perai)</span>
-                <span class="font-mono font-bold text-emerald-700 shrink-0">RM 0.00 (Free)</span>
-              </li>
-              <li class="flex justify-between items-start gap-2">
-                <span>2. Juru Toll ➔ <strong>Exit 138 (Ipoh Utara / Bercham)</strong> <span class="text-stone-400 text-[11px]">(~145 km)</span></span>
-                <span class="font-mono font-bold shrink-0">~RM 18.10</span>
-              </li>
-              <li class="flex justify-between items-start gap-2">
-                <span>3. <strong>Exit 137 (Simpang Pulai)</strong> ➔ Putra Heights Toll <span class="text-stone-400 text-[11px]">(~195 km)</span></span>
-                <span class="font-mono font-bold shrink-0">~RM 22.80</span>
-              </li>
-            </ul>
+          <div class="p-3 rounded-xl bg-amber-50/70 border border-amber-200/60">
+            <div class="text-slate-500">Highway & Bridge Tolls</div>
+            <div class="text-base font-extrabold text-amber-900 mt-0.5">~RM 88.14 <span class="text-[11px] font-medium">total</span></div>
+            <div class="text-[11px] text-slate-600 mt-1">PLUS E1 + ELITE + Penang Bridge (RM 5.74 in)</div>
           </div>
         </div>
       </div>
 
-      <!-- 2. Entrance Fee Breakdown -->
-      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-stone-200/90 shadow-card">
-        <div class="flex items-center justify-between gap-2 mb-3">
-          <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-heritage">Attraction Tickets</span>
-            <h2 class="text-base sm:text-lg font-extrabold text-stone-900">Entrance Fee Breakdown</h2>
+      <!-- Mandatory Parking Apps -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-slate-200/70">
+        <h2 class="text-sm font-extrabold text-slate-900 mb-2">Mandatory Municipal Parking Apps</h2>
+        <div class="space-y-2 text-xs">
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70">
+            <div class="font-bold text-slate-800">1. Park@Perak App</div>
+            <p class="text-slate-600 mt-0.5">Required for roadside bays in <b>Bidor</b> (Tapah Council) & <b>Ipoh</b> (MBI: Embassy, Bercham, Wellness Factory). Rate: ~RM 0.60/hr. Free after 6:00 PM.</p>
           </div>
-          <div class="text-right">
-            <div class="px-2.5 py-1 rounded-xl bg-heritage-pale text-heritage font-mono text-xs sm:text-sm font-extrabold border border-heritage/20">
-              RM 26.00 / pax
-            </div>
-            <div class="text-[11px] font-mono font-bold text-stone-500 mt-0.5">2 Pax Total: RM 52.00</div>
-          </div>
-        </div>
-
-        <div class="divide-y divide-stone-100 text-xs sm:text-sm">
-          <div class="py-2.5 flex justify-between items-center gap-2">
-            <div>
-              <div class="font-bold text-stone-800">Tasik Cermin Ipoh (镜湖)</div>
-              <div class="text-[11px] text-stone-500">MyKad RM 5.00 • Standard RM 10.00 (Optional boat ride RM 25)</div>
-            </div>
-            <div class="text-right font-mono shrink-0">
-              <div class="font-bold text-stone-900">RM 5.00 <span class="text-[10px] text-stone-400">/pax</span></div>
-              <div class="text-[11px] text-stone-500">RM 10.00 (2 pax)</div>
-            </div>
-          </div>
-
-          <div class="py-2.5 flex justify-between items-center gap-2">
-            <div>
-              <div class="font-bold text-stone-800">Penang Hill Funicular Railway (升旗山缆车)</div>
-              <div class="text-[11px] text-stone-500">MyKad Adult Return RM 16.00 • Standard Return RM 30.00</div>
-            </div>
-            <div class="text-right font-mono shrink-0">
-              <div class="font-bold text-stone-900">RM 16.00 <span class="text-[10px] text-stone-400">/pax</span></div>
-              <div class="text-[11px] text-stone-500">RM 32.00 (2 pax)</div>
-            </div>
-          </div>
-
-          <div class="py-2.5 flex justify-between items-center gap-2">
-            <div>
-              <div class="font-bold text-stone-800">[Optional] P. Ramlee House (比南利故居)</div>
-              <div class="text-[11px] text-stone-500">National Archives Heritage Gallery • Free Admission</div>
-            </div>
-            <div class="text-right font-mono shrink-0">
-              <div class="font-bold text-emerald-700">RM 0.00 <span class="text-[10px] text-stone-400">/pax</span></div>
-              <div class="text-[11px] text-emerald-700">Free</div>
-            </div>
-          </div>
-
-          <div class="py-2.5 flex justify-between items-center gap-2">
-            <div>
-              <div class="font-bold text-stone-800">Kellie's Castle (凯利古堡)</div>
-              <div class="text-[11px] text-stone-500">MyKad RM 5.00 • Standard RM 10.00 (+ RM 2.00 official car park)</div>
-            </div>
-            <div class="text-right font-mono shrink-0">
-              <div class="font-bold text-stone-900">RM 5.00 <span class="text-[10px] text-stone-400">/pax</span></div>
-              <div class="text-[11px] text-stone-500">RM 10.00 (2 pax)</div>
-            </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70">
+            <div class="font-bold text-slate-800">2. Penang Smart Parking App</div>
+            <p class="text-slate-600 mt-0.5">Required for roadside bays in <b>Penang Island</b> (MBPP) & <b>Chai Leng Park, Perai</b> (MBSP: Chip Heng). Rate: ~RM 0.80/hr. Free after 6:00 PM.</p>
           </div>
         </div>
       </div>
 
-      <!-- 3. Parking App Checklist -->
-      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-stone-200/90 shadow-card">
-        <div class="mb-3">
-          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Digital Coupons &amp; E-Wallet</span>
-          <h2 class="text-base sm:text-lg font-extrabold text-stone-900">Parking &amp; Highway App Checklist</h2>
-          <p class="text-xs text-stone-500">Tap to check off once installed &amp; topped up on your phone</p>
+      <!-- Pre-Trip Checklist -->
+      <div class="bg-white rounded-2xl p-4 card-shadow border border-slate-200/70">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-sm font-extrabold text-slate-900">Pre-Departure Checklist</h2>
+          <button onclick="resetProgress()" class="text-[11px] font-semibold text-rose-600 hover:underline">Reset All Checks</button>
         </div>
-
-        <div id="checklist-apps" class="space-y-2.5"></div>
-      </div>
-
-      <!-- 4. Pre-Trip Essentials & Field Tips -->
-      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-stone-200/90 shadow-card">
-        <div class="mb-3">
-          <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">Pro Road-Trip Hacks</span>
-          <h2 class="text-base sm:text-lg font-extrabold text-stone-900">Pre-Trip Essentials &amp; Reservations</h2>
-          <p class="text-xs text-stone-500">Field-tested tips to prevent sold-out dishes or soggy takeaways</p>
-        </div>
-
-        <div id="checklist-essentials" class="space-y-2.5"></div>
-      </div>
-
-      <!-- Reset All Saved Progress Card -->
-      <div class="bg-stone-100 rounded-2xl p-4 border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div>
-          <div class="text-xs font-bold text-stone-800">Reset Visited Stops &amp; Checklists</div>
-          <div class="text-[11px] text-stone-500">Clears your local browser progress back to 0%</div>
-        </div>
-        <div id="reset-controls" class="flex items-center gap-2">
-          <button
-            type="button"
-            onclick="showResetConfirm()"
-            class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-red-700 border border-red-200 hover:bg-red-50 transition"
-          >
-            Reset Progress
-          </button>
-        </div>
+        <div id="checklist-items" class="space-y-2 text-xs"></div>
       </div>
     </section>
-
   </main>
 
-  <!-- Custom Non-Blocking Toast Notification -->
-  <div
-    id="toast"
-    role="status"
-    aria-live="polite"
-    class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-200 bg-stone-900 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 max-w-[90vw]"
-  >
-    <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
-    <span id="toast-msg" class="truncate">Copied to clipboard!</span>
-  </div>
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-200"></div>
 
   <script>
-    // =========================================================================
-    // 1. MASTER ITINERARY DATA (100% VERIFIED DETAILS)
-    // =========================================================================
-    const DAY1_STOPS = [
-      {
-        id: 'd1-1',
-        num: 1,
-        category: 'Food',
-        departPrev: '06:45 AM (from Putra Heights)',
-        travelTime: '1 hr 30 mins (~132 km via ELITE & PLUS E1)',
-        arrivalWindow: '08:15 AM – 08:50 AM',
-        duration: '35 mins',
-        nameEn: 'Pun Chun Restaurant',
-        nameZh: '美罗品珍酒楼',
-        address: '38-40, Jalan Besar, 35500 Bidor, Perak',
-        navQuery: 'Pun Chun Restaurant Bidor',
-        toll: '~RM 17.60 (Putra Heights → Exit 130 Bidor)',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'paid',
-        parkingLabel: 'Roadside with fees',
-        parkingDetail: 'Tapah 县议会路边车位, Park@Perak RM 0.60/hr',
-        menuRaw: '招牌药材鸭腿面 Duck Drumstick Noodle [Non-Spicy], 传统萨骑马, 鸡仔饼 (建议两人共享一碗鸭腿面留胃容量)',
-        hours: '07:30 AM – 03:30 PM (餐饮) / 07:30 AM – 08:00 PM (饼家)',
-        offDay: 'Wednesday (周三休，周四正常营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-2',
-        num: 2,
-        category: 'Takeaway',
-        departPrev: '08:50 AM',
-        travelTime: '5 mins (~1.8 km 美罗镇内顺路)',
-        arrivalWindow: '08:55 AM – 09:10 AM',
-        duration: '15 mins',
-        nameEn: 'Jing Yang Salted Chicken',
-        nameZh: '靖洋港式盐焗鸡 — 美罗',
-        address: 'Jalan Bidor Raya / Pekan Bidor, 35500 Bidor, Perak',
-        navQuery: 'Jing Yang Salted Chicken Bidor',
-        toll: 'RM 0.00',
-        entrance: 'Free (外带自理)',
-        parkingType: 'paid',
-        parkingLabel: 'Roadside with fees',
-        parkingDetail: '路边收费车位；快闪外带建议一人留守车内',
-        menuRaw: 'Takeaway (Grab & Go): 招牌港式古法盐焗鸡 Signature HK Salted Chicken [Non-Spicy] (建议出发前致电预留早市出炉批次)',
-        hours: '~08:30 AM – 05:30 PM (售完即止)',
-        offDay: 'Irregular (通常周三休，周四营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-3',
-        num: 3,
-        category: 'Food',
-        departPrev: '09:10 AM',
-        travelTime: '40 mins (~48 km via PLUS E1 Northbound)',
-        arrivalWindow: '09:50 AM – 10:30 AM',
-        duration: '40 mins',
-        nameEn: 'Kedai Kopi Kin Hong',
-        nameZh: '高平大明咖啡山赖粉',
-        address: 'S9, Jalan Pasar, Kopisan Baru, 31600 Gopeng, Perak',
-        navQuery: 'Kedai Kopi Kin Hong Gopeng',
-        toll: '~RM 5.80 (Bidor → Exit 135 Gopeng)',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'free',
-        parkingLabel: 'Free Parking',
-        parkingDetail: '新村巴刹周边免费空地停车',
-        menuRaw: '手工纯米赖粉 Handmade Lai Fun [Non-Spicy] 清汤 / 附辣椒酱 [Spicy], 炸酿料, 炭烧海南咖啡',
-        hours: '06:30 AM – 12:00 PM (售完即止)',
-        offDay: 'Irregular (通常周二/周三休，周四营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-4',
-        num: 4,
-        category: 'Sightseeing',
-        departPrev: '10:30 AM',
-        travelTime: '20 mins (~15 km via Jalan Gopeng)',
-        arrivalWindow: '10:50 AM – 11:40 AM',
-        duration: '50 mins',
-        nameEn: 'Tasik Cermin Ipoh',
-        nameZh: '怡保昆仑喇叭镜湖',
-        address: 'Persiaran Pinggir Rapat 5a, Gunung Rapat, 31350 Ipoh, Perak',
-        navQuery: 'Tasik Cermin Ipoh',
-        toll: 'RM 0.00',
-        entrance: 'RM 5.00 (MyKad) / RM 10.00 (Standard) (游船另计 RM 25)',
-        parkingType: 'free',
-        parkingLabel: 'Free Parking',
-        parkingDetail: '景区入口外专属露天免费停车场',
-        menuRaw: '徒步穿越人工采石矿洞暗道、探索近打谷石灰岩喀斯特天然隐蔽湖泊（Tasik Cermin 1 & 2）与百年采矿地质断层',
-        hours: '09:00 AM – 06:00 PM',
-        offDay: 'Open Daily (全年无休)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-5',
-        num: 5,
-        category: 'Food',
-        departPrev: '11:40 AM',
-        travelTime: '10 mins (~3.5 km 短途行驶)',
-        arrivalWindow: '11:50 AM – 12:35 PM',
-        duration: '45 mins',
-        nameEn: '302 Fried Noodle',
-        nameZh: '昆仑喇叭 302 炒粉',
-        address: '302, Jalan Gunung Rapat, Taman Hillview, 31350 Ipoh, Perak',
-        navQuery: '302 Fried Noodle Gunung Rapat Ipoh',
-        toll: 'RM 0.00',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'free',
-        parkingLabel: 'Free Parking',
-        parkingDetail: '昆仑喇叭新村路边及空地免费停放',
-        menuRaw: '招牌镬气炒鸳鸯/炒河粉 [Non-Spicy]，附参巴辣椒 [Spicy], 自制手打炸酿豆腐',
-        hours: '11:30 AM – 03:30 PM (售完即止)',
-        offDay: 'Mon / Tue (周四正常营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-6',
-        num: 6,
-        category: 'Takeaway',
-        departPrev: '12:35 PM',
-        travelTime: '15 mins (~6.5 km 前往怡保市区)',
-        arrivalWindow: '12:50 PM – 01:05 PM',
-        duration: '15 mins',
-        nameEn: 'Restaurant Embassy',
-        nameZh: '怡保安利大酒家',
-        address: '35, Jalan Raja Ekram (Cowan Street), 30450 Ipoh, Perak',
-        navQuery: 'Restaurant Embassy Ipoh',
-        toll: 'RM 0.00',
-        entrance: 'Free (购买特产自理)',
-        parkingType: 'paid',
-        parkingLabel: 'Roadside with fees',
-        parkingDetail: 'MBI 市政厅路边车位，Park@Perak RM 0.60/hr',
-        menuRaw: 'Takeaway (外带): 招牌菠萝蜜牛油蛋糕 Signature Cempedak Butter Cake [Non-Spicy] (建议出发前致电预留)',
-        hours: '11:30 AM – 02:30 PM; 05:30 PM – 09:30 PM',
-        offDay: 'Wednesday (周三休，周四正常营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-7',
-        num: 7,
-        category: 'Takeaway',
-        departPrev: '01:05 PM',
-        travelTime: '2 hrs 15 mins (~158 km via PLUS E1 & Penang Bridge)',
-        arrivalWindow: '03:20 PM – 03:40 PM',
-        duration: '20 mins',
-        nameEn: '2828 Asam Laksa',
-        nameZh: '槟城霹雳路 2828 亚参叻沙',
-        address: '120-B, Lorong Perak, Jelutong, 11600 George Town, Pulau Pinang',
-        navQuery: '2828 Asam Laksa Jelutong Penang',
-        toll: '~RM 23.84 (Ipoh Utara → Juru RM 18.10 + 槟威大桥 RM 5.74)',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'free',
-        parkingLabel: 'Free Roadside (Lane) / Paid Main Rd',
-        parkingDetail: '内巷 Lorong Perak 免费；停主干道 Jalan Perak 需用 Penang Smart Parking',
-        menuRaw: 'Takeaway to Hotel (外带作晚餐): 招牌亚参叻沙 Asam Laksa [Spicy] 酸辣鱼汤 (务必嘱咐 汤与粉分开打包 Bungkus asing kuah)',
-        hours: '12:00 PM – 05:00 PM',
-        offDay: 'Tuesday (周二休，周四正常营业)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-8',
-        num: 8,
-        category: 'Hotel',
-        departPrev: '03:40 PM',
-        travelTime: '20 mins (~6.5 km 前往亚依淡)',
-        arrivalWindow: '04:00 PM – 05:40 PM',
-        duration: '1 hr 40 mins',
-        nameEn: 'Kingston Hotel 13 - Penang Hill',
-        nameZh: '升旗山金斯顿 13 号酒店',
-        address: '13, Jalan Bukit Bendera, 11500 Ayer Itam, Pulau Pinang',
-        navQuery: 'Kingston Hotel 13 Penang Hill',
-        toll: 'RM 0.00',
-        entrance: 'Free (已预订住宿)',
-        parkingType: 'free',
-        parkingLabel: 'Free Parking',
-        parkingDetail: '酒店住客专属免费停车位',
-        menuRaw: '办理入住、于客房享用刚打包的 2828 亚参叻沙晚餐、梳洗小憩恢复体力',
-        hours: '24 Hours (Check-in 03:00 PM 起)',
-        offDay: 'Open Daily (全年无休)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-9',
-        num: 9,
-        category: 'Sightseeing',
-        departPrev: '05:40 PM (Walk from Hotel)',
-        travelTime: '10 mins (~450 m 酒店步行直达)',
-        arrivalWindow: '05:50 PM – 07:50 PM',
-        duration: '2 hrs 00 mins',
-        nameEn: 'Penang Hill Lower Station',
-        nameZh: '升旗山缆车站与山顶夜景',
-        address: 'Jalan Stesen Bukit Bendera, 11500 Ayer Itam, Pulau Pinang',
-        navQuery: 'Penang Hill Lower Station',
-        toll: 'RM 0.00',
-        entrance: 'RM 16.00 (Adult Return) / RM 30.00 (Standard Return)',
-        parkingType: 'free',
-        parkingLabel: 'N/A (Walk from Hotel)',
-        parkingDetail: '爱车停放酒店，步行 450m 即达；若驾车至多层停车场约 RM 3–5/次',
-        menuRaw: '搭乘百年瑞士陡坡缆车穿梭热带雨林、山顶观景台欣赏日落黄昏与槟威海峡万家灯火、漫步殖民时期高地历史建筑',
-        hours: '06:30 AM – 11:00 PM (尾班下山缆车 11:00 PM)',
-        offDay: 'Open Daily (全年无休)',
-        offDayAlert: false
-      },
-      {
-        id: 'd1-10',
-        num: 10,
-        category: 'Sightseeing',
-        departPrev: '08:00 PM (Drive from Hotel)',
-        travelTime: '20 mins (~9.5 km 前往乔治市)',
-        arrivalWindow: '08:20 PM – 09:10 PM (09:30 PM 返回酒店)',
-        duration: '50 mins',
-        nameEn: 'Armenian Street',
-        nameZh: '乔治市本头公巷夜间世遗漫步',
-        address: 'Lebuh Armenian, George Town, 10200 George Town, Pulau Pinang',
-        navQuery: 'Lebuh Armenian George Town Penang',
-        toll: 'RM 0.00',
-        entrance: 'Free Admission (RM 0.00)',
-        parkingType: 'free',
-        parkingLabel: 'Free after 06:00 PM',
-        parkingDetail: 'MBPP 路边车位仅 8am–6pm 收费，晚间 8pm 停放完全免费',
-        menuRaw: '夜间红灯笼世遗骑楼漫步、壁画艺术与百年宗族会馆建筑巡礼 (若需夜宵甜品可步行至汕头街品尝杏仁茶/四果汤 [Non-Spicy])',
-        hours: '24 Hours (室外文化街区，亮灯至约 10:30 PM)',
-        offDay: 'Open Daily (全年无休)',
-        offDayAlert: false
-      }
-    ];
-
-    const CHECKLIST_APPS = [
-      {
-        id: 'app-perak',
-        title: 'Park@Perak App (Installed & Topped Up)',
-        desc: 'Required for Bidor (Tapah Council) & Ipoh (MBI) roadside bays — RM 0.60/hr. Free after 6:00 PM.'
-      },
-      {
-        id: 'app-penang',
-        title: 'Penang Smart Parking (PSP) App',
-        desc: 'Required for Penang Island (MBPP) & Perai Chai Leng Park (MBSP) roadside bays — RM 0.80/hr. Free after 6:00 PM.'
-      },
-      {
-        id: 'app-tng',
-        title: 'Touch \'n Go eWallet / RFID Balance ≥ RM 100',
-        desc: 'Covers ~RM 88.14 round-trip highway tolls + RM 5–6 Grab ride to Ayer Itam Wet Market.'
-      }
-    ];
-
-    const CHECKLIST_ESSENTIALS = [
-      {
-        id: 'ess-cooler',
-        title: 'Small Insulated Cooler Bag (保温袋) for Bidor Salted Chicken',
-        desc: 'Jing Yang Salted Chicken is bought at 08:55 AM on Day 1. Store in cooler bag during Ipoh stops, then place in Kingston Hotel 13 fridge.'
-      },
-      {
-        id: 'ess-laksa',
-        title: 'Say "Bungkus Asing Kuah" (汤与粉分开打包) at 2828 Asam Laksa',
-        desc: 'Arriving 03:20 PM for takeaway dinner. Separating broth and noodles prevents sogginess before checking into Kingston Hotel 13.'
-      },
-      {
-        id: 'ess-calls',
-        title: 'Pre-Order / Reservation Calls (Salted Chicken, Embassy, Massage)',
-        desc: 'Call Jing Yang Salted Chicken (morning batch), Restaurant Embassy (Cempedak Butter Cake), and Wellness Factory (04:40 PM twin slot if toggled ON).'
-      },
-      {
-        id: 'ess-fuel',
-        title: 'Fuel Strategy: Full Tank at Putra Heights + 1 Top-Up on Day 2',
-        desc: 'Start with a full tank at 06:45 AM Day 1; refuel once after lunch in Perai or at Ipoh Bercham before Batu Gajah & southbound cruise.'
-      }
-    ];
-
-    // =========================================================================
-    // 2. STATE MANAGEMENT (LOCALSTORAGE)
-    // =========================================================================
-    const STORAGE_KEY = 'penang_perak_trip_2026_v1';
-
-    let state = {
-      activeTab: 'day1',
-      includePRamlee: true,
-      includeWellness: true,
-      visited: {},
-      checkedItems: {}
+    const defaultPhones = {
+      "d1-1": "6054341554",   // Pun Chun Restaurant Bidor (Verified Official)
+      "d1-9": "6048288880",   // Penang Hill Corporation (Verified Official)
+      "d2-5": "6053653381"    // Kellie's Castle Batu Gajah (Verified Official)
     };
 
-    function loadState() {
-      try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          state = { ...state, ...parsed };
-        }
-      } catch (e) {
-        // Fallback silently if storage restricted
-      }
-    }
-
-    function saveState() {
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-      } catch (e) {
-        // Fallback silently
-      }
-    }
-
-    // =========================================================================
-    // 3. DYNAMIC DAY 2 BUILDER (REACTS TO OPTIONAL TOGGLES)
-    // =========================================================================
-    function getDay2Stops() {
-      const hasPRamlee = state.includePRamlee;
-      const hasWellness = state.includeWellness;
-
-      const stops = [
+    const itineraryData = {
+      day1: [
         {
-          id: 'd2-1',
-          num: 1,
-          category: 'Food',
-          departPrev: '07:45 AM (from Hotel)',
-          travelTime: '5 mins (~1.5 km 短途往返)',
-          arrivalWindow: hasPRamlee
-            ? '07:50 AM – 08:45 AM (08:50–09:15 AM 回酒店退房)'
-            : '07:50 AM – 08:45 AM (可悠闲至 09:45 AM 退房)',
-          duration: '55 mins',
-          nameEn: 'Ayer Itam Wet Market',
-          nameZh: '亚依淡湿巴刹早市',
-          address: 'Jalan Pasar, Pekan Ayer Itam, 11500 Ayer Itam, Pulau Pinang',
-          navQuery: 'Ayer Itam Market Penang',
-          toll: 'RM 0.00',
-          entrance: 'Free Admission (RM 0.00)',
-          parkingType: 'paid',
-          parkingLabel: 'N/A (Take Grab RM 5–6)',
-          parkingDetail: '建议搭 Grab RM 5–6 免找车位；若自驾为 Roadside with fees RM 0.80/hr',
-          menuRaw: '体验百年山脚集市市井烟火气；早点推荐：巴刹桥头咖喱面 [Spicy]、传统炭烤 Apom 曼煎糕 [Non-Spicy]',
-          hours: '06:00 AM – 11:00 AM (早市黄金时段)',
-          offDay: 'Open Daily (全年无休)',
-          offDayAlert: false
+          id: "d1-1",
+          tag: "Breakfast 1 • Heritage",
+          departureTime: "06:45 AM (Depart Putra Heights)",
+          destination: "Pun Chun Restaurant (美罗品珍酒楼)",
+          address: "38-40, Jalan Besar, 35500 Bidor, Perak",
+          tollFees: "~RM 17.60 (Putra Heights → Exit 130 Bidor)",
+          entranceFees: "Free (Meal self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (Tapah Council • Park@Perak RM 0.60/hr)",
+          menu: "Duck Drumstick Noodle 招牌药材鸭腿面 [Non-Spicy], Shat Kek Ma 萨骑马, Chicken Biscuits 鸡仔饼 (Share 1 bowl to save stomach space)",
+          dietTags: ["Non-Spicy", "Takeaway Biscuits"],
+          timeAllocated: "35 mins (08:15 AM – 08:50 AM)",
+          travelTime: "1 hr 30 mins (~132 km via ELITE & PLUS E1)",
+          operatingHours: "07:30 AM – 03:30 PM (Restaurant) | 07:30 AM – 08:00 PM (Biscuits)",
+          offDay: "Wednesday (Open Thu)",
+          hasPhoneAction: true,
+          waMsg: "Hi Pun Chun Bidor, checking if you are open today (26 Nov) morning around 8:15 AM for Duck Drumstick Noodle?"
+        },
+        {
+          id: "d1-2",
+          tag: "Grab & Go • Pre-Order",
+          departureTime: "08:50 AM (Depart Pun Chun)",
+          destination: "Jing Yang Salted Chicken (美罗靖洋港式盐焗鸡)",
+          address: "Jalan Bidor Raya / Pekan Bidor, 35500 Bidor, Perak",
+          tollFees: "RM 0.00 (Town road)",
+          entranceFees: "Free (Takeaway self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (Quick grab-and-go; 1 person stays in car)",
+          menu: "Signature HK Salted Chicken 招牌港式古法盐焗鸡 [Non-Spicy] (Store in cooler bag; chill at Penang hotel)",
+          dietTags: ["Non-Spicy", "Grab & Go"],
+          timeAllocated: "15 mins (08:55 AM – 09:10 AM)",
+          travelTime: "5 mins (~1.8 km in Bidor town)",
+          operatingHours: "~08:30 AM – 05:30 PM (Until sold out)",
+          offDay: "Irregular / Wed (Open Thu)",
+          hasPhoneAction: true,
+          waMsg: "Hi 靖洋港式盐焗鸡, I would like to reserve/pre-order Salted Chicken for pickup on 26 Nov around 9:00 AM."
+        },
+        {
+          id: "d1-3",
+          tag: "Breakfast 2 • Kopitiam",
+          departureTime: "09:10 AM (Depart Bidor)",
+          destination: "Kedai Kopi Kin Hong (高平大明咖啡山赖粉)",
+          address: "S9, Jalan Pasar, Kopisan Baru, 31600 Gopeng, Perak",
+          tollFees: "~RM 5.80 (Bidor → Exit 135 Gopeng)",
+          entranceFees: "Free (Meal self-paid)",
+          parkingType: "free",
+          parking: "Free Parking (Village market open space)",
+          menu: "Handmade Lai Fun 手工纯米赖粉 [Non-Spicy soup / Spicy chili dip], Homemade Yong Tau Foo 炸酿料, Charcoal Hainan Coffee",
+          dietTags: ["Non-Spicy", "Spicy Chili Option"],
+          timeAllocated: "40 mins (09:50 AM – 10:30 AM)",
+          travelTime: "40 mins (~48 km via PLUS E1 Northbound)",
+          operatingHours: "06:30 AM – 12:00 PM (Until sold out)",
+          offDay: "Irregular (Tue/Wed; Open Thu)",
+          hasPhoneAction: false
+        },
+        {
+          id: "d1-4",
+          tag: "Sightseeing • Karst Geology",
+          departureTime: "10:30 AM (Depart Gopeng)",
+          destination: "Tasik Cermin Ipoh (怡保昆仑喇叭镜湖)",
+          address: "Persiaran Pinggir Rapat 5a, Gunung Rapat, 31350 Ipoh, Perak",
+          tollFees: "RM 0.00 (Federal road)",
+          entranceFees: "RM 5.00 (MyKad) | RM 10.00 (Standard) • Boat optional RM 25",
+          parkingType: "free",
+          parking: "Free Parking (Dedicated visitor open lot outside tunnel)",
+          menu: "Walk through historic quarry mining tunnel into hidden Kinta Valley limestone karst lakes (Tasik Cermin 1 & 2)",
+          dietTags: ["45+ Min Exploration", "Geology"],
+          timeAllocated: "50 mins (10:50 AM – 11:40 AM)",
+          travelTime: "20 mins (~15 km via Jalan Gopeng)",
+          operatingHours: "09:00 AM – 06:00 PM",
+          offDay: "Open Daily",
+          hasPhoneAction: true,
+          waMsg: "Hi Tasik Cermin Ipoh, confirming operating hours for 26 Nov morning around 10:50 AM."
+        },
+        {
+          id: "d1-5",
+          tag: "Lunch • Wok Hei",
+          departureTime: "11:40 AM (Depart Tasik Cermin)",
+          destination: "302 Fried Noodle (昆仑喇叭 302 炒粉)",
+          address: "302, Jalan Gunung Rapat, Taman Hillview, 31350 Ipoh, Perak",
+          tollFees: "RM 0.00 (Village road)",
+          entranceFees: "Free (Meal self-paid)",
+          parkingType: "free",
+          parking: "Free Parking (New village roadside & open spaces)",
+          menu: "Wok-Hei Wat Tan Hor / Fried Yin Yong 镬气炒鸳鸯 [Non-Spicy, Spicy sambal on side], Handmade Fried Yong Tau Foo",
+          dietTags: ["Non-Spicy", "Spicy Sambal Option"],
+          timeAllocated: "45 mins (11:50 AM – 12:35 PM)",
+          travelTime: "10 mins (~3.5 km short drive)",
+          operatingHours: "11:30 AM – 03:30 PM (Until sold out)",
+          offDay: "Mon / Tue (Open Thu)",
+          hasPhoneAction: false
+        },
+        {
+          id: "d1-6",
+          tag: "Specialty Takeaway",
+          departureTime: "12:35 PM (Depart 302 Noodle)",
+          destination: "Restaurant Embassy (怡保安利大酒家)",
+          address: "35, Jalan Raja Ekram (Cowan Street), 30450 Ipoh, Perak",
+          tollFees: "RM 0.00 (City road)",
+          entranceFees: "Free (Cake self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (MBI Council • Park@Perak RM 0.60/hr)",
+          menu: "Takeaway: Signature Cempedak Butter Cake 招牌菠萝蜜牛油蛋糕 [Non-Spicy] (Call/WhatsApp ahead to reserve)",
+          dietTags: ["Non-Spicy", "Takeaway"],
+          timeAllocated: "15 mins (12:50 PM – 01:05 PM)",
+          travelTime: "15 mins (~6.5 km to Ipoh town)",
+          operatingHours: "11:30 AM – 02:30 PM; 05:30 PM – 09:30 PM",
+          offDay: "Wednesday (Open Thu)",
+          hasPhoneAction: true,
+          waMsg: "Hi Restaurant Embassy Ipoh, I would like to reserve Cempedak Butter Cake for takeaway on 26 Nov around 12:50 PM."
+        },
+        {
+          id: "d1-7",
+          tag: "Dinner Takeaway • Penang",
+          departureTime: "01:05 PM (Depart Embassy)",
+          destination: "2828 Asam Laksa (槟城霹雳路 2828 亚参叻沙)",
+          address: "120-B, Lorong Perak, Jelutong, 11600 George Town, Pulau Pinang",
+          tollFees: "~RM 23.84 (Ipoh Utara → Juru RM 18.10 + Penang Bridge RM 5.74)",
+          entranceFees: "Free (Takeaway self-paid)",
+          parkingType: "mixed",
+          parking: "Free Roadside inside Lorong Perak (Main Jalan Perak requires Penang Smart Parking)",
+          menu: "Takeaway to Hotel as Dinner: Asam Laksa 招牌亚参叻沙 [Spicy] — Ask for 'Bungkus asing kuah' (soup & noodles packed separately)",
+          dietTags: ["Spicy", "Takeaway Dinner"],
+          timeAllocated: "20 mins (03:20 PM – 03:40 PM)",
+          travelTime: "2 hrs 15 mins (~158 km via PLUS E1 & Penang Bridge)",
+          operatingHours: "12:00 PM – 05:00 PM",
+          offDay: "Tuesday (Open Thu)",
+          hasPhoneAction: false
+        },
+        {
+          id: "d1-8",
+          tag: "Hotel Check-In & Dinner",
+          departureTime: "03:40 PM (Depart 2828 Laksa)",
+          destination: "Kingston Hotel 13 - Penang Hill (升旗山金斯顿 13 号酒店)",
+          address: "13, Jalan Bukit Bendera, 11500 Ayer Itam, Pulau Pinang",
+          tollFees: "RM 0.00 (Island road)",
+          entranceFees: "Free (Booked accommodation)",
+          parkingType: "free",
+          parking: "Free Parking (Dedicated hotel guest parking)",
+          menu: "Check in, enjoy takeaway 2828 Asam Laksa dinner in room, refrigerate salted chicken & rest",
+          dietTags: ["Overnight Base"],
+          timeAllocated: "1 hr 40 mins (04:00 PM – 05:40 PM)",
+          travelTime: "20 mins (~6.5 km to Ayer Itam)",
+          operatingHours: "24 Hours (Check-in from 03:00 PM)",
+          offDay: "Open Daily",
+          hasPhoneAction: true,
+          waMsg: "Hi Kingston Hotel 13 Penang Hill, we have a reservation for 26 Nov and will check in around 4:00 PM."
+        },
+        {
+          id: "d1-9",
+          tag: "Sunset & Night View",
+          departureTime: "05:40 PM (Walk from Hotel)",
+          destination: "Penang Hill Lower Station (升旗山缆车站与山顶夜景)",
+          address: "Jalan Stesen Bukit Bendera, 11500 Ayer Itam, Pulau Pinang",
+          tollFees: "RM 0.00 (Walk 450m)",
+          entranceFees: "RM 16.00 (Adult Return) | RM 30.00 (Standard Return)",
+          parkingType: "free",
+          parking: "N/A — Walk 6–8 mins from hotel (Multi-storey car park ~RM 3–5 if driving)",
+          menu: "Ride Swiss-engineered funicular railway through rainforest for sunset panorama & Penang Strait night lights",
+          dietTags: ["Sunset + Night", "Heritage Rail"],
+          timeAllocated: "2 hrs 00 mins (05:50 PM – 07:50 PM)",
+          travelTime: "10 mins (~450 m walk from hotel)",
+          operatingHours: "06:30 AM – 11:00 PM (Last train down 11:00 PM)",
+          offDay: "Open Daily",
+          hasPhoneAction: true,
+          waMsg: "Hi Penang Hill Corp, checking funicular train operations for 26 Nov evening."
+        },
+        {
+          id: "d1-10",
+          tag: "UNESCO Night Stroll",
+          departureTime: "08:00 PM (Drive from Hotel)",
+          destination: "Armenian Street (乔治市本头公巷夜间世遗漫步)",
+          address: "Lebuh Armenian, George Town, 10200 George Town, Pulau Pinang",
+          tollFees: "RM 0.00 (Island road)",
+          entranceFees: "Free Admission (RM 0.00)",
+          parkingType: "free",
+          parking: "Free after 06:00 PM (MBPP roadside bays only charge 8am–6pm)",
+          menu: "Evening lantern-lit heritage shophouses, murals & clan architecture (Optional dessert at Kimberley St: Almond Tea / Four Fruit Soup [Non-Spicy])",
+          dietTags: ["Free Entry", "Night Heritage"],
+          timeAllocated: "50 mins (08:20 PM – 09:10 PM • Back at hotel 09:30 PM)",
+          travelTime: "20 mins (~9.5 km to George Town)",
+          operatingHours: "24 Hours (Street lights until ~10:30 PM)",
+          offDay: "Open Daily",
+          hasPhoneAction: false
         }
-      ];
+      ],
+      day2: [
+        {
+          id: "d2-1",
+          tag: "Morning Market",
+          departureTime: "07:45 AM (Depart Hotel)",
+          destination: "Ayer Itam Wet Market (亚依淡湿巴刹早市)",
+          address: "Jalan Pasar, Pekan Ayer Itam, 11500 Ayer Itam, Pulau Pinang",
+          tollFees: "RM 0.00 (Take Grab ~RM 5–6 to avoid parking hassle)",
+          entranceFees: "Free Admission (RM 0.00)",
+          parkingType: "mixed",
+          parking: "N/A — Take Grab (~RM 5–6) • Driving is Roadside with fees (RM 0.80/hr) & very tight",
+          menu: "Bridge-side Curry Mee [Spicy], Charcoal Apom Manis [Non-Spicy], century-old hill-foot morning market culture",
+          dietTags: ["Spicy Curry", "Non-Spicy Apom"],
+          timeAllocated: "55 mins (07:50 AM – 08:45 AM)",
+          travelTime: "5 mins (~1.5 km short hop)",
+          operatingHours: "06:00 AM – 11:00 AM",
+          offDay: "Open Daily",
+          hasPhoneAction: false,
+          dynamicNoteId: "hotel-checkout-note"
+        },
+        {
+          id: "d2-2",
+          optionalKey: "pramlee",
+          tag: "OPTIONAL • Free Museum",
+          departureTime: "09:15 AM (Depart Hotel after Check-out)",
+          destination: "[OPTIONAL] P. Ramlee House (比南利故居纪念馆)",
+          address: "Lot 2180, Jalan P. Ramlee, Taman Kampar, 10460 George Town, Pulau Pinang",
+          tollFees: "RM 0.00 (Zero detour — main route to Penang Bridge)",
+          entranceFees: "Free Admission (RM 0.00)",
+          parkingType: "free",
+          parking: "Free Parking (Dedicated visitor parking inside compound)",
+          menu: "Explore 1926 traditional Malay timber house & air-conditioned gallery on Malaysia's legendary artist & 1950s Penang history",
+          dietTags: ["Zero Entry Fee", "Air-Con Gallery"],
+          timeAllocated: "50 mins (09:30 AM – 10:20 AM)",
+          travelTime: "15 mins (~5.5 km on-route to bridge)",
+          operatingHours: "Fri: 09:00 AM – 12:00 PM; 03:00 PM – 05:00 PM (Closed 12–3pm Friday prayers)",
+          offDay: "Monday (Open Fri morning)",
+          hasPhoneAction: false
+        },
+        {
+          id: "d2-3",
+          tag: "Lunch • Mainland Perai",
+          departureTime: "10:20 AM (Depart Optional Gallery)",
+          destination: "Kedai Kopi Chip Heng (威省柴楞磻进兴茶餐室芋头饭)",
+          address: "50, Lebuh Kurau 3, Taman Chai Leng, 13700 Perai, Pulau Pinang",
+          tollFees: "RM 0.00 (Penang Bridge exit from island is free)",
+          entranceFees: "Free (Meal self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (MBSP commercial bays • Penang Smart Parking RM 0.80/hr)",
+          menu: "Signature Yam Rice 招牌咸香虾米芋头饭 [Non-Spicy], Salted Vegetable Pig Offal Soup 咸菜猪杂汤 [Non-Spicy, Spicy sambal dip]",
+          dietTags: ["Non-Spicy", "Spicy Sambal Dip"],
+          timeAllocated: "1 hr 25 mins (10:50 AM – 12:15 PM)",
+          travelTime: "30 mins (~15.5 km across 1st Penang Bridge)",
+          operatingHours: "10:00 AM – 02:30 PM (Until sold out)",
+          offDay: "Wed & Thu (Open Fri)",
+          hasPhoneAction: false,
+          dynamicDepartureId: "chipheng-depart"
+        },
+        {
+          id: "d2-4",
+          tag: "Tea Time • Takeaway",
+          departureTime: "12:15 PM (Depart Perai)",
+          destination: "Red Bike Woon Zai Gou & Bercham Popiah (巴占红脚车碗仔糕 + 薄饼)",
+          address: "Lorong Bercham 11 / Pusat Bandar Bercham Timur, 31400 Ipoh, Perak",
+          tollFees: "~RM 18.10 (Juru → Exit 138 Ipoh Utara)",
+          entranceFees: "Free (Takeaway self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (MBI commercial street • Park@Perak RM 0.60/hr)",
+          menu: "Takeaway in car: Savory Preserved Radish & Sweet Red Bean Woon Zai Gou [Non-Spicy], Fresh Jicama Popiah [Non-Spicy or Spicy chili]",
+          dietTags: ["Non-Spicy", "Spicy Popiah Option", "Takeaway"],
+          timeAllocated: "25 mins (02:10 PM – 02:35 PM)",
+          travelTime: "1 hr 55 mins (~145 km via PLUS E1 Southbound)",
+          operatingHours: "~01:30 PM – 05:00 PM (Until sold out)",
+          offDay: "Irregular (Mon/Wed; Open Fri)",
+          hasPhoneAction: false
+        },
+        {
+          id: "d2-5",
+          tag: "Sightseeing • Colonial Heritage",
+          departureTime: "02:35 PM (Depart Bercham)",
+          destination: "Kellie's Castle (华都牙也凯利古堡)",
+          address: "Lot 48436, KM 5.5, Jalan Gopeng, 31000 Batu Gajah, Perak",
+          tollFees: "RM 0.00 (Federal road)",
+          entranceFees: "RM 5.00 (MyKad) | RM 10.00 (Standard)",
+          parkingType: "paid",
+          parking: "Paid Private Lot (Official visitor open lot • RM 2.00 / entry)",
+          menu: "Explore 1915 unfinished Scottish planter's mansion, Malaysia's first elevator shaft, secret underground tunnels & rooftop courtyard",
+          dietTags: ["Heritage Mansion", "Secret Tunnels"],
+          timeAllocated: "1 hr 15 mins (03:10 PM – 04:25 PM)",
+          travelTime: "35 mins (~24 km south via Jalan Gopeng)",
+          operatingHours: "09:00 AM – 06:00 PM (Last ticket 05:30 PM)",
+          offDay: "Open Daily",
+          hasPhoneAction: true,
+          waMsg: "Hi Kellie's Castle, confirming visiting hours for Friday 27 Nov afternoon around 3:10 PM.",
+          dynamicTimeId: "kellies-time"
+        },
+        {
+          id: "d2-6",
+          optionalKey: "wellness",
+          tag: "OPTIONAL • Recharge Massage",
+          departureTime: "04:25 PM (Depart Kellie's Castle)",
+          destination: "[OPTIONAL] Wellness Factory (Symphony Business Park Branch)",
+          address: "Symphony Business Park, Medan Lapangan Lagenda, 31350 Ipoh, Perak",
+          tollFees: "RM 0.00 (Federal road northbound)",
+          entranceFees: "Free (Massage treatment self-paid)",
+          parkingType: "fees",
+          parking: "Roadside with fees (MBI commercial bays • Park@Perak RM 0.60/hr; Free after 6pm)",
+          menu: "60-min Shoulder, Neck & Foot Reflexology to unwind before driving home (5 mins from Restoran Long Wu; book 04:40 PM slot)",
+          dietTags: ["60-Min Recharge", "Advance Booking"],
+          timeAllocated: "1 hr 00 mins (04:40 PM – 05:40 PM)",
+          travelTime: "15 mins (~10 km northbound via Jalan Gopeng)",
+          operatingHours: "11:00 AM – 11:00 PM",
+          offDay: "Open Daily",
+          hasPhoneAction: true,
+          waMsg: "Hi Wellness Factory (Symphony Business Park Ipoh), I would like to book a 60-min massage for 2 pax on Friday 27 Nov at 4:40 PM."
+        },
+        {
+          id: "d2-7",
+          tag: "Dinner Finale • Ipoh",
+          departureTime: "05:40 PM (Depart Wellness Factory)",
+          destination: "Restoran Long Wu (怡保翠林城龙武海鲜饭店)",
+          address: "No. 1, 3 & 5, Medan Lapangan Lagenda 1, Panorama Lapangan Perdana, 31350 Ipoh, Perak",
+          tollFees: "RM 0.00 (Same neighborhood)",
+          entranceFees: "Free (Dinner self-paid)",
+          parkingType: "free",
+          parking: "Free after 06:00 PM (Roadside bays right outside restaurant)",
+          menu: "Signature Wok-Hei Seafood, Homemade Tofu & Stir-fried Greens [Non-Spicy & Spicy options available]",
+          dietTags: ["Non-Spicy", "Spicy Options"],
+          timeAllocated: "1 hr 15 mins (05:45 PM – 07:00 PM)",
+          travelTime: "5 mins (~2 km within Panorama Lapangan Perdana)",
+          operatingHours: "11:30 AM – 02:30 PM; 05:30 PM – 09:30 PM",
+          offDay: "Tuesday / Bi-weekly (Open Fri)",
+          hasPhoneAction: true,
+          waMsg: "Hi Restoran Long Wu Ipoh, I would like to reserve a table for 2 pax on Friday 27 Nov around 5:45 PM.",
+          dynamicTimeId: "longwu-time",
+          dynamicDepartureId: "longwu-depart"
+        },
+        {
+          id: "d2-8",
+          tag: "Homeward Loop",
+          departureTime: "07:00 PM (Depart Restoran Long Wu)",
+          destination: "Putra Heights (温暖的家 — Trip Completed)",
+          address: "Putra Heights, 47650 Subang Jaya, Selangor",
+          tollFees: "~RM 22.80 (Exit 137 Simpang Pulai → Putra Heights)",
+          entranceFees: "—",
+          parkingType: "free",
+          parking: "Home Garage (Free)",
+          menu: "Smooth evening cruise via PLUS E1 & ELITE highway back to Putra Heights",
+          dietTags: ["Safe Arrival"],
+          timeAllocated: "Arrival at 09:00 PM",
+          travelTime: "2 hrs 00 mins (~195 km via PLUS E1 & ELITE)",
+          operatingHours: "—",
+          offDay: "—",
+          hasPhoneAction: false,
+          dynamicTimeId: "home-arrival",
+          dynamicDepartureId: "home-depart"
+        }
+      ]
+    };
 
-      if (hasPRamlee) {
-        stops.push({
-          id: 'd2-2',
-          num: 2,
-          category: 'Optional',
-          departPrev: '09:15 AM (after Check-out)',
-          travelTime: '15 mins (~5.5 km 往大桥必经路线，零绕路)',
-          arrivalWindow: '09:30 AM – 10:20 AM',
-          duration: '50 mins',
-          nameEn: '[OPTIONAL] P. Ramlee House',
-          nameZh: '比南利故居纪念馆',
-          address: 'Lot 2180, Jalan P. Ramlee, Taman Kampar, 10460 George Town, Pulau Pinang',
-          navQuery: 'P Ramlee House Penang',
-          toll: 'RM 0.00',
-          entrance: 'Free Admission (RM 0.00 零门票)',
-          parkingType: 'free',
-          parkingLabel: 'Free Parking',
-          parkingDetail: '纪念馆院内设专属访客免费停车位',
-          menuRaw: 'Optional: 参观 1926 年传统马来高脚木屋原址与冷气纪念展厅，了解大马国宝级艺术家生平、手稿与 1950 年代槟城人文历史 (备选：Muzium & Galeri Tuanku Fauziah USM)',
-          hours: '周五 09:00 AM – 12:00 PM; 03:00 PM – 05:00 PM (12:00–15:00 午祷休馆)',
-          offDay: 'Monday (周一休，周五上午正常开放)',
-          offDayAlert: false
-        });
-      }
+    const checklistDefaults = [
+      { id: "chk-1", text: "Top up Touch 'n Go / RFID card (minimum RM 100 balance)" },
+      { id: "chk-2", text: "Install & top up Park@Perak + Penang Smart Parking apps" },
+      { id: "chk-3", text: "Bring MyKad (required for RM 5 Mirror Lake, RM 16 Penang Hill & RM 5 Kellie's Castle)" },
+      { id: "chk-4", text: "Pack small cooler bag for Bidor Jing Yang Salted Chicken (Day 1 morning pickup)" },
+      { id: "chk-5", text: "Pre-order Salted Chicken, Embassy Cempedak Cake & book Wellness Factory 4:40 PM slot" }
+    ];
 
-      stops.push({
-        id: 'd2-3',
-        num: hasPRamlee ? 3 : 2,
-        category: 'Food',
-        departPrev: hasPRamlee
-          ? '10:20 AM (from P. Ramlee House)'
-          : '09:45 AM (Direct after Delayed Hotel Check-out)',
-        travelTime: hasPRamlee
-          ? '30 mins (~15.5 km 跨第一槟威大桥出岛)'
-          : '35 mins (~19 km 亚依淡直上第一槟威大桥)',
-        arrivalWindow: hasPRamlee ? '10:50 AM – 12:15 PM' : '10:20 AM – 12:15 PM',
-        duration: hasPRamlee ? '1 hr 25 mins' : '1 hr 55 mins (从容早午餐)',
-        nameEn: 'Kedai Kopi Chip Heng',
-        nameZh: '威省柴楞磻进兴茶餐室芋头饭',
-        address: '50, Lebuh Kurau 3, Taman Chai Leng, 13700 Perai, Pulau Pinang',
-        navQuery: 'Kedai Kopi Chip Heng Chai Leng Park Perai',
-        toll: 'RM 0.00 (第一槟威大桥出岛方向免费)',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'paid',
-        parkingLabel: 'Roadside with fees',
-        parkingDetail: 'MBSP 商业区路边车位，Penang Smart Parking RM 0.80/hr',
-        menuRaw: '招牌咸香虾米芋头饭 Yam Rice [Non-Spicy], 浓郁咸菜猪杂汤 [Non-Spicy]，附特制参巴辣椒酱 [Spicy] (10:50 AM 前抵达避开午间排队)',
-        hours: '10:00 AM – 02:30 PM (售完即止)',
-        offDay: 'Wed & Thu (周三/周四休，周五正常营业)',
-        offDayAlert: false
-      });
+    let completedStops = JSON.parse(localStorage.getItem("pp2026_completed") || "{}");
+    let savedPhones = JSON.parse(localStorage.getItem("pp2026_phones") || "{}");
+    let checkedItems = JSON.parse(localStorage.getItem("pp2026_checklist") || "{}");
 
-      stops.push({
-        id: 'd2-4',
-        num: hasPRamlee ? 4 : 3,
-        category: 'Takeaway',
-        departPrev: '12:15 PM',
-        travelTime: '1 hr 55 mins (~145 km via PLUS E1 Southbound)',
-        arrivalWindow: '02:10 PM – 02:35 PM',
-        duration: '25 mins',
-        nameEn: 'Red Bike Woon Zai Gou & Bercham Popiah',
-        nameZh: '怡保巴占红脚车碗仔糕 + 传统薄饼',
-        address: 'Lorong Bercham 11 / Pusat Bandar Bercham Timur, 31400 Ipoh, Perak',
-        navQuery: 'Red Bike Woon Zai Gou Bercham Ipoh',
-        toll: '~RM 18.10 (Juru → Exit 138 Ipoh Utara)',
-        entrance: 'Free (小吃外带自理)',
-        parkingType: 'paid',
-        parkingLabel: 'Roadside with fees',
-        parkingDetail: 'MBI 商业街路边车位，Park@Perak RM 0.60/hr',
-        menuRaw: 'Takeaway (外带车上享用): 古早味咸香菜脯碗仔糕 & 甜味红豆碗仔糕 [Non-Spicy], 现包爽脆沙葛薄饼 Fresh Popiah (可选 [Non-Spicy] / 加辣 [Spicy])',
-        hours: '~01:30 PM – 05:00 PM (午后出摊，售完即止)',
-        offDay: 'Irregular (通常周一/周三休，周五正常出摊)',
-        offDayAlert: false
-      });
-
-      stops.push({
-        id: 'd2-5',
-        num: hasPRamlee ? 5 : 4,
-        category: 'Sightseeing',
-        departPrev: '02:35 PM',
-        travelTime: '35 mins (~24 km via Jalan Gopeng 南下)',
-        arrivalWindow: hasWellness
-          ? '03:10 PM – 04:25 PM'
-          : '03:10 PM – 05:05 PM',
-        duration: hasWellness ? '1 hr 15 mins' : '1 hr 55 mins',
-        nameEn: "Kellie's Castle",
-        nameZh: '华都牙也凯利古堡',
-        address: 'Lot 48436, KM 5.5, Jalan Gopeng, 31000 Batu Gajah, Perak',
-        navQuery: "Kellie's Castle Batu Gajah Perak",
-        toll: 'RM 0.00',
-        entrance: 'RM 5.00 (MyKad) / RM 10.00 (Standard)',
-        parkingType: 'paid',
-        parkingLabel: 'Paid Private Lot',
-        parkingDetail: '景区官方露天停车场，RM 2.00 / 次',
-        menuRaw: '深度探索 1915 年苏格兰庄园主未竟古堡建筑群、全马首座私人电梯井遗迹、地下隐秘逃生通道、酒窖与屋顶空中庭院',
-        hours: '09:00 AM – 06:00 PM (最后售票 05:30 PM)',
-        offDay: 'Open Daily (全年无休)',
-        offDayAlert: false
-      });
-
-      if (hasWellness) {
-        stops.push({
-          id: 'd2-6',
-          num: hasPRamlee ? 6 : 5,
-          category: 'Optional',
-          departPrev: '04:25 PM',
-          travelTime: '15 mins (~10 km via Jalan Gopeng 顺路北上)',
-          arrivalWindow: '04:40 PM – 05:40 PM',
-          duration: '1 hr 00 mins',
-          nameEn: '[OPTIONAL] Wellness Factory (Symphony Business Park)',
-          nameZh: '怡保翠林城商务园康养按摩馆',
-          address: 'Symphony Business Park, Medan Lapangan Lagenda, 31350 Ipoh, Perak',
-          navQuery: 'Wellness Factory Symphony Business Park Ipoh',
-          toll: 'RM 0.00',
-          entrance: 'Free (按摩疗程消费自理)',
-          parkingType: 'paid',
-          parkingLabel: 'Roadside with fees (Free after 6pm)',
-          parkingDetail: 'MBI 商业园路边车位，Park@Perak RM 0.60/hr，6pm后免费',
-          menuRaw: 'Optional — Proposed Slot: 60 分钟肩颈与足底深度舒缓按摩，消除两天自驾与步行疲劳 (建议提前致电预约 04:40 PM 双人时段；距离龙武仅 5 分钟车程)',
-          hours: '11:00 AM – 11:00 PM',
-          offDay: 'Open Daily (全年无休)',
-          offDayAlert: false
-        });
-      }
-
-      const preDinnerNum = stops.length + 1;
-      stops.push({
-        id: 'd2-7',
-        num: preDinnerNum,
-        category: 'Food',
-        departPrev: hasWellness ? '05:40 PM (from Wellness Factory)' : "05:05 PM (from Kellie's Castle)",
-        travelTime: hasWellness
-          ? '5 mins (~2 km 紧邻同区)'
-          : '20 mins (~11.5 km via Botani 北上，完全顺路)',
-        arrivalWindow: hasWellness
-          ? '05:45 PM – 07:00 PM'
-          : '05:25 PM – 06:45 PM',
-        duration: hasWellness ? '1 hr 15 mins' : '1 hr 20 mins',
-        nameEn: 'Restoran Long Wu',
-        nameZh: '怡保翠林城龙武海鲜饭店',
-        address: 'No. 1, 3 & 5, Medan Lapangan Lagenda 1, Panorama Lapangan Perdana, 31350 Ipoh, Perak',
-        navQuery: 'Restoran Long Wu Panorama Lapangan Perdana Ipoh',
-        toll: 'RM 0.00',
-        entrance: 'Free (餐饮消费自理)',
-        parkingType: 'free',
-        parkingLabel: 'Free after 06:00 PM',
-        parkingDetail: '店前路边车位，MBI 6pm 前象征性收费，6pm 后完全免费',
-        menuRaw: 'Dinner: 招牌镬气海鲜佳肴、特色自制豆腐与时蔬小炒 (可根据口味点选 [Non-Spicy] 或微辣/香辣 [Spicy] 菜式)',
-        hours: '11:30 AM – 02:30 PM; 05:30 PM – 09:30 PM',
-        offDay: 'Tuesday (周二/双周轮休，周五晚市正常营业)',
-        offDayAlert: false
-      });
-
-      stops.push({
-        id: 'd2-8',
-        num: preDinnerNum + 1,
-        category: 'Home',
-        departPrev: hasWellness ? '07:00 PM (from Restoran Long Wu)' : '06:45 PM (from Restoran Long Wu)',
-        travelTime: '2 hrs 00 mins (~195 km via PLUS E1 & ELITE)',
-        arrivalWindow: hasWellness ? 'Arrival at 09:00 PM' : 'Arrival at 08:45 PM',
-        duration: 'Home Arrival',
-        nameEn: 'Putra Heights',
-        nameZh: '温暖的家 — 圆满闭环',
-        address: 'Putra Heights, 47650 Subang Jaya, Selangor',
-        navQuery: 'Putra Heights Subang Jaya',
-        toll: '~RM 22.80 (Exit 137 Simpang Pulai → Putra Heights)',
-        entrance: '—',
-        parkingType: 'free',
-        parkingLabel: 'Home Garage (Free)',
-        parkingDetail: '平安抵达自家车库，圆满完成闭环',
-        menuRaw: 'Trip Completed: 平安抵步 Putra Heights，结束 2D1N 槟霹美食与文化自驾之旅',
-        hours: '—',
-        offDay: '—',
-        offDayAlert: false
-      });
-
-      return stops;
+    function getPhone(id) {
+      return savedPhones[id] || defaultPhones[id] || "";
     }
 
-    // =========================================================================
-    // 4. RENDERING HELPERS
-    // =========================================================================
-    function formatMenuBadges(rawText) {
-      return rawText
-        .replace(/\[Non-Spicy\]/g, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 mx-0.5">Non-Spicy</span>')
-        .replace(/\[Spicy\]/g, '<span class="inline-flex items-center px-1.5 py-0.5 rounded-md text-[11px] font-bold bg-red-100 text-red-800 border border-red-200 mx-0.5">Spicy</span>');
+    function normalizeMYPhone(raw) {
+      let digits = raw.replace(/\D/g, "");
+      if (!digits) return "";
+      if (digits.startsWith("0")) digits = "6" + digits;
+      else if (!digits.startsWith("60")) digits = "60" + digits;
+      return digits;
     }
 
-    function getCategoryBadgeClass(cat) {
-      switch (cat) {
-        case 'Food':
-          return 'bg-terracotta-soft text-terracotta border-terracotta/25';
-        case 'Takeaway':
-          return 'bg-orange-100 text-orange-800 border-orange-200';
-        case 'Sightseeing':
-          return 'bg-heritage-pale text-heritage border-heritage/25';
-        case 'Hotel':
-          return 'bg-indigo-50 text-indigo-800 border-indigo-200';
-        case 'Optional':
-          return 'bg-purple-50 text-purple-800 border-purple-200';
-        default:
-          return 'bg-emerald-50 text-emerald-800 border-emerald-200';
+    function formatDisplayPhone(digits) {
+      if (!digits) return "";
+      if (digits.startsWith("60")) {
+        const local = "0" + digits.slice(2);
+        return local.length >= 9 ? local.slice(0, 3) + "-" + local.slice(3) : local;
+      }
+      return "+" + digits;
+    }
+
+    function promptSavePhone(id, name) {
+      const current = getPhone(id);
+      const input = prompt(`Enter business phone / WhatsApp number for:\n${name}\n(e.g. 012-345 6789 or 05-254 9532)`, current ? formatDisplayPhone(current) : "");
+      if (input === null) return;
+      const cleaned = normalizeMYPhone(input);
+      if (!cleaned) {
+        delete savedPhones[id];
+        showToast("Phone number removed");
+      } else {
+        savedPhones[id] = cleaned;
+        showToast("Saved! 1-Click WhatsApp & Call unlocked");
+      }
+      localStorage.setItem("pp2026_phones", JSON.stringify(savedPhones));
+      renderAll();
+    }
+
+    function toggleStop(id) {
+      completedStops[id] = !completedStops[id];
+      localStorage.setItem("pp2026_completed", JSON.stringify(completedStops));
+      updateProgress();
+      renderAll();
+    }
+
+    function toggleChecklist(id) {
+      checkedItems[id] = !checkedItems[id];
+      localStorage.setItem("pp2026_checklist", JSON.stringify(checkedItems));
+      renderChecklist();
+    }
+
+    function resetProgress() {
+      if (!confirm("Reset all checked stops and checklist items?")) return;
+      completedStops = {};
+      checkedItems = {};
+      localStorage.setItem("pp2026_completed", "{}");
+      localStorage.setItem("pp2026_checklist", "{}");
+      updateProgress();
+      renderAll();
+      showToast("All progress reset");
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => showToast("Address copied!"));
+    }
+
+    function shareTrip() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({ title: "Perak & Penang 2D1N Self-Drive Roadbook", url }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(url).then(() => showToast("Share link copied to clipboard!"));
       }
     }
 
-    function renderStopCard(stop) {
-      const isVisited = Boolean(state.visited[stop.id]);
-      const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.navQuery)}`;
-      const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(stop.navQuery)}&navigate=yes`;
+    function showToast(msg) {
+      const el = document.getElementById("toast");
+      el.textContent = msg;
+      el.classList.remove("opacity-0");
+      setTimeout(() => el.classList.add("opacity-0"), 2300);
+    }
 
-      const parkingBadgeClass = stop.parkingType === 'free'
-        ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
-        : 'bg-amber-50 text-amber-800 border-amber-200';
+    function switchTab(tab) {
+      ["day1", "day2", "summary"].forEach(t => {
+        document.getElementById(`view-${t}`).classList.toggle("hidden", t !== tab);
+        const btn = document.getElementById(`tab-${t}`);
+        if (t === tab) {
+          btn.className = "tab-btn flex-1 py-2 px-3 rounded-lg text-xs font-bold transition bg-amber-400 text-slate-900 shadow-sm whitespace-nowrap";
+        } else {
+          btn.className = "tab-btn flex-1 py-2 px-3 rounded-lg text-xs font-bold transition text-emerald-100/80 hover:bg-white/10 whitespace-nowrap";
+        }
+      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
-      const cardBorderClass = stop.category === 'Optional'
-        ? 'border-dashed border-2 border-purple-300'
-        : 'border border-stone-200/90';
+    function getParkingBadgeClass(type) {
+      if (type === "free") return "bg-emerald-50 text-emerald-800 border-emerald-200";
+      if (type === "fees") return "bg-amber-50 text-amber-800 border-amber-200";
+      if (type === "paid") return "bg-blue-50 text-blue-800 border-blue-200";
+      return "bg-purple-50 text-purple-800 border-purple-200";
+    }
+
+    function buildCard(stop, idx, overrides = {}) {
+      const isDone = !!completedStops[stop.id];
+      const phone = getPhone(stop.id);
+      const depTime = overrides.departureTime || stop.departureTime;
+      const allocTime = overrides.timeAllocated || stop.timeAllocated;
+      const extraNote = overrides.extraNote || "";
+
+      const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.destination + " " + stop.address)}`;
+      const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(stop.destination + " " + stop.address)}&navigate=yes`;
+      const googleContactUrl = `https://www.google.com/search?q=${encodeURIComponent(stop.destination + " " + stop.address + " phone whatsapp")}`;
+      const waUrl = phone ? `https://wa.me/${phone}?text=${encodeURIComponent(stop.waMsg || "Hi, checking business hours for " + stop.destination)}` : "";
+      const telUrl = phone ? `tel:+${phone}` : "";
+
+      const dietBadges = stop.dietTags.map(tag => {
+        let cls = "bg-slate-100 text-slate-700";
+        if (tag.toLowerCase().includes("spicy") && !tag.toLowerCase().includes("non")) cls = "bg-rose-50 text-rose-700 border border-rose-200";
+        else if (tag.toLowerCase().includes("non-spicy")) cls = "bg-emerald-50 text-emerald-700 border border-emerald-200";
+        else if (tag.toLowerCase().includes("takeaway") || tag.toLowerCase().includes("grab")) cls = "bg-amber-50 text-amber-800 border border-amber-200";
+        return `<span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cls}">${tag}</span>`;
+      }).join("");
 
       return `
-        <article id="card-${stop.id}" class="relative ${isVisited ? 'stop-visited' : 'bg-white'} rounded-2xl ${cardBorderClass} shadow-card overflow-hidden transition-all duration-200">
-          <!-- 1. Departure Time & Travel Leg Pill Header -->
-          <div class="bg-stone-100/90 px-3.5 py-2 border-b border-stone-200/80 flex flex-wrap items-center justify-between gap-1.5 text-[11px] sm:text-xs">
-            <div class="inline-flex items-center gap-1.5 font-bold text-stone-700">
-              <svg class="w-3.5 h-3.5 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              <span>Depart ${stop.departPrev}</span>
+        <article class="bg-white rounded-2xl p-4 card-shadow border ${isDone ? 'border-emerald-400 bg-emerald-50/20' : 'border-slate-200/80'} transition">
+          <!-- Top Bar: Step + Departure + Check -->
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-[#14362D] text-white">Stop ${idx + 1}</span>
+                <span class="text-[11px] font-bold text-amber-800 bg-amber-100/80 px-2 py-0.5 rounded-md">${stop.tag}</span>
+              </div>
+              <div class="text-xs font-extrabold text-[#14362D] mt-1.5 flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Depart: ${depTime}</span>
+              </div>
             </div>
-            <span class="font-mono text-[11px] font-semibold text-stone-500 bg-white px-2 py-0.5 rounded-md border border-stone-200/80">
-              ${stop.travelTime}
-            </span>
+            <button onclick="toggleStop('${stop.id}')" class="shrink-0 flex items-center gap-1 text-[11px] font-bold px-2.5 py-1.5 rounded-xl border transition ${isDone ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'}">
+              <span>${isDone ? '✓ Done' : 'Mark Done'}</span>
+            </button>
           </div>
 
-          <div class="p-3.5 sm:p-4 space-y-3">
-            <!-- 2. Arrival Time, Title, Category Badge & Visited Check-off -->
-            <div class="flex items-start justify-between gap-2.5">
-              <div class="min-w-0 flex-1">
-                <div class="flex flex-wrap items-center gap-1.5 mb-1">
-                  <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-heritage text-white font-mono text-[11px] font-bold">
-                    ${stop.num}
-                  </span>
-                  <span class="px-2 py-0.5 rounded-md text-[11px] font-bold border ${getCategoryBadgeClass(stop.category)}">
-                    ${stop.category}
-                  </span>
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono font-bold bg-stone-100 text-stone-800">
-                    <svg class="w-3 h-3 text-heritage" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    ${stop.arrivalWindow}
-                  </span>
-                </div>
-                <h3 class="stop-title text-base sm:text-lg font-extrabold text-stone-900 leading-snug">
-                  ${stop.nameEn}
-                </h3>
-                <div class="text-xs sm:text-sm font-semibold text-heritage mt-0.5">
-                  ${stop.nameZh}
-                </div>
-              </div>
+          <!-- Destination & Address -->
+          <h3 class="text-base font-extrabold text-slate-900 mt-2 leading-snug ${isDone ? 'line-through text-slate-500' : ''}">${stop.destination}</h3>
+          <div class="flex items-start justify-between gap-2 mt-1">
+            <p class="text-xs text-slate-500 leading-relaxed">${stop.address}</p>
+            <button onclick="copyText('${stop.address.replace(/'/g, "\\'")}')" class="shrink-0 text-[10px] font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 px-2 py-1 rounded-lg">Copy</button>
+          </div>
 
-              <!-- Visited Toggle Button -->
-              <button
-                type="button"
-                onclick="toggleVisited('${stop.id}')"
-                aria-pressed="${isVisited}"
-                class="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-2 rounded-xl text-xs font-bold border transition active:scale-95 ${
-                  isVisited
-                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                    : 'bg-stone-50 text-stone-600 border-stone-200 hover:bg-emerald-50 hover:text-emerald-800 hover:border-emerald-200'
-                }"
-              >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                <span>${isVisited ? 'Visited' : 'Mark'}</span>
-              </button>
+          <!-- Timing & Cost Grid -->
+          <div class="grid grid-cols-2 gap-2 mt-3 text-[11px]">
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="text-slate-400 font-semibold">Est. Travelling Time</div>
+              <div class="font-bold text-slate-800 mt-0.5">${stop.travelTime}</div>
             </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="text-slate-400 font-semibold">Time Spent at Stop</div>
+              <div class="font-bold text-slate-800 mt-0.5">${allocTime}</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="text-slate-400 font-semibold">Toll Fees</div>
+              <div class="font-bold text-slate-800 mt-0.5">${stop.tollFees}</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="text-slate-400 font-semibold">Entrance Fees</div>
+              <div class="font-bold text-slate-800 mt-0.5">${stop.entranceFees}</div>
+            </div>
+          </div>
 
-            <!-- 3. Street Address & One-Tap Mobile Navigation Buttons -->
-            <div class="bg-stone-50/90 rounded-xl p-2.5 border border-stone-200/70 space-y-2">
-              <div class="flex items-start justify-between gap-2">
-                <p class="text-xs text-stone-600 leading-relaxed flex-1">
-                  <span class="font-bold text-stone-700">Address:</span> ${stop.address}
-                </p>
-                <button
-                  type="button"
-                  onclick="copyText('${stop.address.replace(/'/g, "\\'")}', 'Address copied!')"
-                  class="shrink-0 p-1.5 rounded-lg bg-white border border-stone-200 text-stone-500 hover:text-heritage hover:border-heritage/30 active:scale-95 transition"
-                  title="Copy address"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <!-- Parking Badge -->
+          <div class="mt-2.5 p-2.5 rounded-xl border text-[11px] font-semibold ${getParkingBadgeClass(stop.parkingType)}">
+            <span class="font-extrabold uppercase tracking-wide mr-1">Parking:</span> ${stop.parking}
+          </div>
+
+          <!-- Recommended Menu / Activities -->
+          <div class="mt-2.5 p-3 rounded-xl bg-[#FAF8F4] border border-stone-200/80">
+            <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-stone-500">Recommended Menu / Activity</span>
+              <div class="flex flex-wrap gap-1">${dietBadges}</div>
+            </div>
+            <p class="text-xs text-slate-800 leading-relaxed font-medium">${stop.menu}</p>
+            ${extraNote ? `<p class="text-[11px] text-amber-800 font-bold mt-1.5 bg-amber-100/70 px-2 py-1 rounded-lg">${extraNote}</p>` : ''}
+          </div>
+
+          <!-- Operating Hours & Off Day -->
+          <div class="mt-2.5 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-600 bg-slate-50/80 px-3 py-2 rounded-xl border border-slate-100">
+            <div><span class="font-bold text-slate-700">Hours:</span> ${stop.operatingHours}</div>
+            <div><span class="font-bold text-rose-700">Off Day:</span> ${stop.offDay}</div>
+          </div>
+
+          <!-- Action Buttons: Navigation + 1-Click WhatsApp / Call -->
+          <div class="mt-3 pt-2.5 border-t border-slate-100 grid grid-cols-2 gap-2">
+            <a href="${mapsUrl}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-[#14362D] hover:bg-[#1c4a3e] text-white text-xs font-bold transition">
+              <span>Google Maps</span>
+            </a>
+            <a href="${wazeUrl}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold transition">
+              <span>Waze</span>
+            </a>
+          </div>
+
+          <!-- Business Contact / 1-Click WhatsApp Row -->
+          ${stop.hasPhoneAction ? `
+            <div class="mt-2 flex flex-wrap items-center gap-2">
+              ${phone ? `
+                <a href="${waUrl}" target="_blank" rel="noopener" class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-extrabold shadow-sm transition">
+                  <span>1-Click WhatsApp (${formatDisplayPhone(phone)})</span>
+                </a>
+                <a href="${telUrl}" class="shrink-0 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold transition">
+                  Call
+                </a>
+                <button onclick="promptSavePhone('${stop.id}', '${stop.destination.replace(/'/g, "\\'")}')" class="shrink-0 py-2 px-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 text-[11px] font-bold">
+                  Edit #
                 </button>
-              </div>
-              <div class="grid grid-cols-2 gap-2">
-                <a
-                  href="${gmapsUrl}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold bg-heritage text-white hover:bg-heritage-light active:scale-98 transition shadow-xs"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                  <span>Google Maps</span>
+              ` : `
+                <a href="${googleContactUrl}" target="_blank" rel="noopener" class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold transition">
+                  <span>Find Contact on Google</span>
                 </a>
-                <a
-                  href="${wazeUrl}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold bg-sky-600 text-white hover:bg-sky-700 active:scale-98 transition shadow-xs"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-                  <span>Waze</span>
-                </a>
-              </div>
+                <button onclick="promptSavePhone('${stop.id}', '${stop.destination.replace(/'/g, "\\'")}')" class="shrink-0 py-2 px-3 rounded-xl bg-[#25D366]/15 hover:bg-[#25D366]/25 text-emerald-900 border border-[#25D366]/40 text-xs font-extrabold transition">
+                  + Save WhatsApp #
+                </button>
+              `}
             </div>
-
-            <!-- 4. Toll Fees, Entrance Fees & Color-Coded Parking Badges -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
-              <div class="rounded-xl p-2 bg-stone-50 border border-stone-200/80">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400">Toll Fees</div>
-                <div class="font-bold text-stone-800 mt-0.5 leading-snug">${stop.toll}</div>
-              </div>
-              <div class="rounded-xl p-2 bg-stone-50 border border-stone-200/80">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400">Entrance Fees</div>
-                <div class="font-bold text-stone-800 mt-0.5 leading-snug">${stop.entrance}</div>
-              </div>
-              <div class="rounded-xl p-2 border ${parkingBadgeClass}">
-                <div class="text-[10px] font-bold uppercase tracking-wider opacity-80">Parking</div>
-                <div class="font-extrabold mt-0.5 leading-snug">${stop.parkingLabel}</div>
-                <div class="text-[11px] opacity-90 mt-0.5 leading-tight">${stop.parkingDetail}</div>
-              </div>
-            </div>
-
-            <!-- 5. Highly Recommended Menu / Activities -->
-            <div class="rounded-xl p-3 bg-terracotta-pale/60 border border-terracotta/15">
-              <div class="text-[10px] font-extrabold uppercase tracking-wider text-terracotta mb-1">
-                Recommended Menu / Activities
-              </div>
-              <p class="text-xs sm:text-sm text-stone-800 leading-relaxed">
-                ${formatMenuBadges(stop.menuRaw)}
-              </p>
-            </div>
-
-            <!-- 6 & 7. Time Allocated + Operating Hours & Off Day -->
-            <div class="pt-1 border-t border-stone-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-              <div class="inline-flex items-center gap-1.5 text-stone-700">
-                <span class="px-2 py-0.5 rounded-md bg-heritage-pale text-heritage font-bold">
-                  Stay: ${stop.duration}
-                </span>
-              </div>
-              <div class="flex flex-wrap items-center gap-1.5 text-[11px] text-stone-600">
-                <span><strong class="text-stone-800">Hours:</strong> ${stop.hours}</span>
-                <span class="px-2 py-0.5 rounded-md bg-stone-100 text-stone-700 font-semibold border border-stone-200">
-                  Off: ${stop.offDay}
-                </span>
-              </div>
-            </div>
-          </div>
+          ` : ''}
         </article>
       `;
     }
 
     function renderAll() {
-      // Render Day 1
-      const d1Container = document.getElementById('day1-stops');
-      d1Container.innerHTML = DAY1_STOPS.map(renderStopCard).join('');
+      // Day 1
+      document.getElementById("view-day1").innerHTML = itineraryData.day1
+        .map((stop, idx) => buildCard(stop, idx))
+        .join("");
 
-      // Render Day 2 (Dynamic)
-      const day2Stops = getDay2Stops();
-      const d2Container = document.getElementById('day2-stops');
-      d2Container.innerHTML = day2Stops.map(renderStopCard).join('');
+      // Day 2 with Optional Toggles
+      const includePRamlee = document.getElementById("toggle-pramlee").checked;
+      const includeWellness = document.getElementById("toggle-wellness").checked;
 
-      // Update Day 2 Header Subtitle & ETA Badge
-      const etaText = state.includeWellness ? 'Home 09:00 PM' : 'Home 08:45 PM';
-      document.getElementById('day2-eta-badge').textContent = etaText;
-      document.getElementById('day2-subtitle').textContent =
-        `${day2Stops.length} stops • Morning Market, Heritage & Castle Exploration • ${etaText}`;
-
-      // Sync Toggle UI States
-      syncToggleUI('pramlee', state.includePRamlee);
-      syncToggleUI('wellness', state.includeWellness);
-
-      const pBanner = document.getElementById('pramlee-off-banner');
-      if (state.includePRamlee) {
-        pBanner.classList.add('hidden');
-        document.getElementById('toggle-pramlee-desc').textContent =
-          'ON: Visit 09:30–10:20 AM (Free entry, zero detour on route to bridge).';
-      } else {
-        pBanner.classList.remove('hidden');
-        document.getElementById('toggle-pramlee-desc').textContent =
-          'OFF: Skipped — Hotel check-out delayed to 09:45 AM before crossing bridge.';
-      }
-
-      document.getElementById('toggle-wellness-desc').textContent = state.includeWellness
-        ? 'ON: 60-min massage 04:40–05:40 PM • Dinner 05:45 PM • Home 09:00 PM.'
-        : 'OFF: Extended Kellie\'s Castle till 05:05 PM • Dinner 05:25 PM • Home 08:45 PM.';
-
-      // Render Checklists in Summary Tab
-      renderChecklist('checklist-apps', CHECKLIST_APPS);
-      renderChecklist('checklist-essentials', CHECKLIST_ESSENTIALS);
-
-      // Update KPI Progress Counter
-      const activeStops = [...DAY1_STOPS, ...day2Stops];
-      const visitedCount = activeStops.filter(s => state.visited[s.id]).length;
-      const totalCount = activeStops.length;
-      const pct = totalCount > 0 ? Math.round((visitedCount / totalCount) * 100) : 0;
-
-      document.getElementById('kpiProgressText').textContent = `${visitedCount} / ${totalCount}`;
-      document.getElementById('kpiProgressBar').style.width = `${pct}%`;
-
-      // Sync Tab Visibility
-      applyTabUI(state.activeTab);
-    }
-
-    function syncToggleUI(key, isOn) {
-      const btn = document.getElementById(`btn-toggle-${key}`);
-      const knob = document.getElementById(`knob-toggle-${key}`);
-      if (!btn || !knob) return;
-      btn.setAttribute('aria-checked', String(isOn));
-      if (isOn) {
-        btn.classList.remove('bg-stone-300');
-        btn.classList.add('bg-heritage');
-        knob.classList.remove('translate-x-0');
-        knob.classList.add('translate-x-5');
-      } else {
-        btn.classList.remove('bg-heritage');
-        btn.classList.add('bg-stone-300');
-        knob.classList.remove('translate-x-5');
-        knob.classList.add('translate-x-0');
-      }
-    }
-
-    function renderChecklist(containerId, items) {
-      const el = document.getElementById(containerId);
-      if (!el) return;
-      el.innerHTML = items.map(item => {
-        const checked = Boolean(state.checkedItems[item.id]);
-        return `
-          <button
-            type="button"
-            onclick="toggleChecklistItem('${item.id}')"
-            class="w-full text-left p-3 rounded-xl border transition flex items-start gap-3 ${
-              checked
-                ? 'bg-emerald-50/70 border-emerald-200'
-                : 'bg-stone-50 border-stone-200/80 hover:bg-stone-100/70'
-            }"
-          >
-            <span class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center shrink-0 border ${
-              checked
-                ? 'bg-emerald-600 border-emerald-600 text-white'
-                : 'bg-white border-stone-300'
-            }">
-              ${checked ? '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>' : ''}
-            </span>
-            <div class="min-w-0 flex-1">
-              <div class="text-xs sm:text-sm font-bold ${checked ? 'line-through text-stone-500' : 'text-stone-800'}">
-                ${item.title}
-              </div>
-              <p class="text-[11px] sm:text-xs text-stone-500 mt-0.5 leading-relaxed">
-                ${item.desc}
-              </p>
-            </div>
-          </button>
-        `;
-      }).join('');
-    }
-
-    // =========================================================================
-    // 5. INTERACTIVE USER ACTIONS
-    // =========================================================================
-    function switchTab(tabName) {
-      state.activeTab = tabName;
-      saveState();
-      applyTabUI(tabName);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function applyTabUI(tabName) {
-      ['day1', 'day2', 'summary'].forEach(t => {
-        const view = document.getElementById(`view-${t}`);
-        const btn = document.getElementById(`tab-${t}`);
-        if (t === tabName) {
-          view.classList.remove('hidden');
-          btn.classList.add('bg-heritage', 'text-white', 'shadow-xs');
-          btn.classList.remove('text-stone-600', 'hover:text-stone-900');
-        } else {
-          view.classList.add('hidden');
-          btn.classList.remove('bg-heritage', 'text-white', 'shadow-xs');
-          btn.classList.add('text-stone-600', 'hover:text-stone-900');
-        }
+      const filteredDay2 = itineraryData.day2.filter(stop => {
+        if (stop.optionalKey === "pramlee" && !includePRamlee) return false;
+        if (stop.optionalKey === "wellness" && !includeWellness) return false;
+        return true;
       });
+
+      document.getElementById("day2-cards").innerHTML = filteredDay2
+        .map((stop, idx) => {
+          const overrides = {};
+          if (stop.id === "d2-1" && !includePRamlee) {
+            overrides.extraNote = "Optional museum skipped: Return to hotel & check out at 09:45 AM.";
+          }
+          if (stop.id === "d2-3" && !includePRamlee) {
+            overrides.departureTime = "09:45 AM (Depart Hotel directly)";
+          }
+          if (stop.id === "d2-5" && !includeWellness) {
+            overrides.timeAllocated = "1 hr 55 mins (03:10 PM – 05:05 PM)";
+          }
+          if (stop.id === "d2-7" && !includeWellness) {
+            overrides.departureTime = "05:05 PM (Depart Kellie's Castle)";
+            overrides.timeAllocated = "1 hr 20 mins (05:25 PM – 06:45 PM)";
+          }
+          if (stop.id === "d2-8" && !includeWellness) {
+            overrides.departureTime = "06:45 PM (Depart Restoran Long Wu)";
+            overrides.timeAllocated = "Arrival at 08:45 PM";
+          }
+          return buildCard(stop, idx, overrides);
+        })
+        .join("");
+
+      renderContactDirectory();
+      renderChecklist();
+      updateProgress();
     }
 
-    function toggleOptional(key) {
-      if (key === 'pramlee') {
-        state.includePRamlee = !state.includePRamlee;
-        showToast(state.includePRamlee ? 'P. Ramlee House included (09:30 AM)' : 'P. Ramlee House skipped • Check-out 09:45 AM');
-      } else if (key === 'wellness') {
-        state.includeWellness = !state.includeWellness;
-        showToast(state.includeWellness ? 'Wellness Factory included (04:40 PM)' : 'Massage skipped • Home by 08:45 PM');
-      }
-      saveState();
-      renderAll();
+    function renderContactDirectory() {
+      const contactStops = [...itineraryData.day1, ...itineraryData.day2].filter(s => s.hasPhoneAction);
+      document.getElementById("contact-directory").innerHTML = contactStops.map(stop => {
+        const phone = getPhone(stop.id);
+        const googleContactUrl = `https://www.google.com/search?q=${encodeURIComponent(stop.destination + " " + stop.address + " phone whatsapp")}`;
+        const waUrl = phone ? `https://wa.me/${phone}?text=${encodeURIComponent(stop.waMsg || "")}` : "";
+        return `
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="text-xs font-extrabold text-slate-800">${stop.destination}</div>
+              <div class="text-[11px] text-slate-500">${phone ? "Saved: +" + phone : "Tap Google Lookup to get phone/WhatsApp"}</div>
+            </div>
+            <div class="flex items-center gap-1.5">
+              ${phone ? `
+                <a href="${waUrl}" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-[#25D366] text-white text-[11px] font-extrabold">WhatsApp</a>
+                <a href="tel:+${phone}" class="px-2.5 py-1.5 rounded-lg bg-slate-800 text-white text-[11px] font-bold">Call</a>
+                <button onclick="promptSavePhone('${stop.id}', '${stop.destination.replace(/'/g, "\\'")}')" class="px-2 py-1.5 rounded-lg bg-slate-200 text-slate-700 text-[11px] font-bold">Edit</button>
+              ` : `
+                <a href="${googleContactUrl}" target="_blank" rel="noopener" class="px-2.5 py-1.5 rounded-lg bg-amber-100 text-amber-900 text-[11px] font-bold">Google Lookup</a>
+                <button onclick="promptSavePhone('${stop.id}', '${stop.destination.replace(/'/g, "\\'")}')" class="px-2.5 py-1.5 rounded-lg bg-emerald-700 text-white text-[11px] font-bold">+ Add #</button>
+              `}
+            </div>
+          </div>
+        `;
+      }).join("");
     }
 
-    function toggleVisited(stopId) {
-      state.visited[stopId] = !state.visited[stopId];
-      saveState();
-      renderAll();
-      if (state.visited[stopId]) {
-        showToast('Marked stop as Visited!');
-      }
+    function renderChecklist() {
+      document.getElementById("checklist-items").innerHTML = checklistDefaults.map(item => {
+        const checked = !!checkedItems[item.id];
+        return `
+          <label class="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-200/70 cursor-pointer">
+            <input type="checkbox" ${checked ? "checked" : ""} onchange="toggleChecklist('${item.id}')" class="mt-0.5 w-4 h-4 accent-[#14362D] rounded" />
+            <span class="${checked ? 'line-through text-slate-400' : 'text-slate-700 font-medium'}">${item.text}</span>
+          </label>
+        `;
+      }).join("");
     }
 
-    function toggleChecklistItem(itemId) {
-      state.checkedItems[itemId] = !state.checkedItems[itemId];
-      saveState();
-      renderAll();
+    function updateProgress() {
+      const includePRamlee = document.getElementById("toggle-pramlee")?.checked ?? true;
+      const includeWellness = document.getElementById("toggle-wellness")?.checked ?? true;
+      const activeStops = [
+        ...itineraryData.day1,
+        ...itineraryData.day2.filter(s => {
+          if (s.optionalKey === "pramlee" && !includePRamlee) return false;
+          if (s.optionalKey === "wellness" && !includeWellness) return false;
+          return true;
+        })
+      ];
+      const total = activeStops.length;
+      const done = activeStops.filter(s => completedStops[s.id]).length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+      document.getElementById("progress-label").textContent = `${done} of ${total} stops checked`;
+      document.getElementById("progress-pct").textContent = `${pct}%`;
+      document.getElementById("progress-bar").style.width = `${pct}%`;
     }
 
-    // Reliable Clipboard Copy (Works in Mobile Browsers & Sandboxed iFrames)
-    function copyText(text, successMessage) {
-      const textarea = document.createElement('textarea');
-      textarea.value = text;
-      textarea.setAttribute('readonly', '');
-      textarea.style.position = 'fixed';
-      textarea.style.opacity = '0';
-      document.body.appendChild(textarea);
-      textarea.select();
-      try {
-        document.execCommand('copy');
-        showToast(successMessage || 'Copied to clipboard!');
-      } catch (err) {
-        showToast('Unable to copy automatically');
-      }
-      document.body.removeChild(textarea);
-    }
-
-    function copyShareLink() {
-      copyText(window.location.href, 'Trip dashboard link copied! Ready to share.');
-    }
-
-    // Custom Inline Reset Confirmation (No window.confirm)
-    function showResetConfirm() {
-      const container = document.getElementById('reset-controls');
-      container.innerHTML = `
-        <button type="button" onclick="confirmReset()" class="px-3 py-2 rounded-xl text-xs font-bold bg-red-600 text-white hover:bg-red-700 transition">
-          Confirm Clear
-        </button>
-        <button type="button" onclick="cancelReset()" class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-stone-700 border border-stone-300 hover:bg-stone-50 transition">
-          Cancel
-        </button>
-      `;
-    }
-
-    function cancelReset() {
-      const container = document.getElementById('reset-controls');
-      container.innerHTML = `
-        <button type="button" onclick="showResetConfirm()" class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-red-700 border border-red-200 hover:bg-red-50 transition">
-          Reset Progress
-        </button>
-      `;
-    }
-
-    function confirmReset() {
-      state.visited = {};
-      state.checkedItems = {};
-      saveState();
-      cancelReset();
-      renderAll();
-      showToast('All progress cleared!');
-    }
-
-    let toastTimer = null;
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      const msgEl = document.getElementById('toast-msg');
-      msgEl.textContent = msg;
-      toast.classList.remove('opacity-0', 'translate-y-3');
-      toast.classList.add('opacity-100', 'translate-y-0');
-      if (toastTimer) clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => {
-        toast.classList.remove('opacity-100', 'translate-y-0');
-        toast.classList.add('opacity-0', 'translate-y-3');
-      }, 2400);
-    }
-
-    // =========================================================================
-    // 6. INITIALIZATION ON WINDOW LOAD
-    // =========================================================================
-    window.addEventListener('DOMContentLoaded', () => {
-      loadState();
-      renderAll();
-    });
+    renderAll();
   </script>
 </body>
 </html>
